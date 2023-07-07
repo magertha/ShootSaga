@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Controls;
 public class Timer : MonoBehaviour
 {
     public BallControl ballControl;
-    float countdown = 10;
+    float countdown = 90;
     public TMP_Text tex;
     public GameObject up;
     //public ContestMain conmain;
