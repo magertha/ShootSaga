@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LeaderButton : MonoBehaviour
 {
+    public GameObject leaderboard;
     public void Leader()
     {
-        SceneManager.LoadScene(24);
+        leaderboard.SetActive(true);
     }
 }
 

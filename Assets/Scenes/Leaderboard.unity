@@ -1292,10 +1292,10 @@ RectTransform:
   m_Father: {fileID: 1043980417}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.018757557, y: 0.8271865}
-  m_AnchorMax: {x: 0.98426265, y: 0.90532}
-  m_AnchoredPosition: {x: -1, y: 51}
-  m_SizeDelta: {x: 8.963501, y: -11}
+  m_AnchorMin: {x: 0, y: 0.86353225}
+  m_AnchorMax: {x: 0.98426265, y: 0.93631995}
+  m_AnchoredPosition: {x: -30.5, y: 7.5}
+  m_SizeDelta: {x: -6.036499, y: -4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1532330465
 CanvasGroup:
@@ -2315,6 +2315,7 @@ MonoBehaviour:
   nameInput: {fileID: 572888626}
   rowPrefab: {fileID: 3130824468982863650, guid: 952129be0c8114640aba2f96d34dd7d0, type: 3}
   rowsParent: {fileID: 313926296}
+  playerFound: 0
 --- !u!1 &2124085294
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,30 +13,26 @@ public class PlayFabManager : MonoBehaviour
     public GameObject rowPrefab;
     public Transform rowsParent;
     string loggedInPlayedId;
-    public static bool nameAccepter, playerFound;
+    public bool playerFound;
     // Start is called before the first frame update
     void Start()
     {
-        playerFound = false;
-        nameAccepter = false;
         Login();
-    }
-
-    IEnumerator EXO()
-    {
-        yield return new WaitForSeconds(3f);
-
-        GetLeaderboard();
+        
+        playerFound = false;
+        PlayerPrefs.GetInt("nameAccepter", 0);
+      
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (nameAccepter == true)
+        if (PlayerPrefs.GetInt("nameAccepter") == 1)
         {
             nameWindow.SetActive(true);
-            nameAccepter = false;
+            PlayerPrefs.SetInt("nameAccepter", 0);
         }
+        
     }
     void Login()
     {
@@ -56,7 +52,6 @@ public class PlayFabManager : MonoBehaviour
     {
         loggedInPlayedId = result.PlayFabId;
         Debug.Log("Successful");
-        EXO();
         string name = null;
         if (result.InfoResultPayload.PlayerProfile != null)
         {
@@ -64,8 +59,10 @@ public class PlayFabManager : MonoBehaviour
         }
         if (name == null)
         {
-            nameAccepter = true;
+            PlayerPrefs.SetInt("nameAccepter", 1);
         }
+
+        SendLeaderboard(PlayerPrefs.GetInt("high"));
 
     }
     public void SubmitNameButton()

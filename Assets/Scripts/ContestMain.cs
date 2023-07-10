@@ -18,7 +18,6 @@ public class ContestMain : MonoBehaviour
     public TMP_Text coinText;
     public GameObject[] hoopArr;
     Adds adds;
-    PlayFabManager playFabManager;
 
 
     // Start is called before the first frame update
@@ -28,10 +27,6 @@ public class ContestMain : MonoBehaviour
         Time.timeScale = 1;
 
         adds = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Adds>();
-
-        playFabManager = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PlayFabManager>();
-
-        playFabManager.SendLeaderboard((int)5); 
 
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
@@ -80,7 +75,6 @@ public class ContestMain : MonoBehaviour
         if (score > PlayerPrefs.GetInt("high", 0))
         {
             PlayerPrefs.SetInt("high", score);
-            playFabManager.SendLeaderboard((int)PlayerPrefs.GetInt("high"));
         }
         coinSystem.AddCoins(score);
         coinText.text = "+ " + score.ToString() + " coins";

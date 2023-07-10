@@ -729,7 +729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229860970}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -4.8528566, z: 5}
+  m_LocalPosition: {x: -0.91, y: -3.2643616, z: 5}
   m_LocalScale: {x: 0.1380091, y: 0.12980542, z: 0.1298054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1031,7 +1031,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.0928564
+  orthographic size: 4.5043616
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2457,7 +2457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.048661835, y: 0.9054376}
   m_AnchorMax: {x: 0.349, y: 0.9657455}
-  m_AnchoredPosition: {x: -0.5433655, y: 1.4997559}
+  m_AnchoredPosition: {x: -0.54333496, y: 1.4997559}
   m_SizeDelta: {x: -3.0075684, y: -4.6988983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932081572
@@ -3513,7 +3513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217459715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
+  m_LocalPosition: {x: 0, y: 4.7243614, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5031,8 +5031,8 @@ MonoBehaviour:
   Ball4: {fileID: 3325024333122030058, guid: e0a6be3702332c04b8a58759621e288d, type: 3}
   Ball5: {fileID: 3325024333122030058, guid: e9d0d873dc2b95d43827ae969559558a, type: 3}
   Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
-  x: -2
-  y: -4
+  x: -4
+  y: -2
   z: 4
 --- !u!212 &1869193741
 SpriteRenderer:
