@@ -21,7 +21,7 @@ public class GameOverScreen : MonoBehaviour
             adds.LoadFullSize();
             GO = true;
             oversc.SetActive(true);
-
+            Time.timeScale = 0;
         }
     }
 }

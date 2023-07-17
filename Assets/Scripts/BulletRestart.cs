@@ -28,7 +28,6 @@ public class BulletRestart : MonoBehaviour
 
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Counter>().enabled = false;
 
-            Time.timeScale = 0;
         }
     }
 }
