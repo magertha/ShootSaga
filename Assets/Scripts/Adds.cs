@@ -68,12 +68,12 @@ public class Adds : MonoBehaviour
 
     public void ShowFullSize()
     {
-        rando = Random.Range(0, 3);
-        //test = true;
-        if(rando == 2)
-        {
-            IronSource.Agent.showInterstitial();
-        }
+        //rando = Random.Range(0, 3);
+        ////test = true;
+        //if(rando == 2)
+        //{
+        //    IronSource.Agent.showInterstitial();
+        //}
 
 
         //if (IronSource.Agent.isInterstitialReady())
