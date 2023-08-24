@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
-  DevAccountEmail: oguz@cerebrumtechnologies.com
-  DevAccountToken: b9et8no9fhni3z48b6mx8p1asb11aqgs8ifcbcodkpqcu9978aek77jezic1xjcwa9dbbydi49473bpgyynryquce9z1c931ma1zbih8ckurux7ud6rqicx4q8gyxhpw9rda5ckdg7agqncbx3yonzm9g4m6hybj9ztstcmnkiue9u16xtkjjopzkjrdxgd5syjbo159
+  DevAccountEmail: 
+  DevAccountToken: 
   AadAuthorization: 
-  SelectedStudio: PsyStorm Games
-  SdkPath: Assets/PlayFabSDK
+  SelectedStudio: 
+  SdkPath: 
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0

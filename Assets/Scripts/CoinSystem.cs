@@ -5,10 +5,13 @@ using UnityEngine;
 public class CoinSystem : MonoBehaviour
 {
     public int totalCoins = 0; // Total amount of coins earned
-
-    private void Awake()
+    private void Update()
     {
         LoadTotalCoins(); // Load the total coins from PlayerPrefs at game start
+    }
+    private void Awake()
+    {
+        //LoadTotalCoins(); // Load the total coins from PlayerPrefs at game start
     }
 
     // Function to add coins at the end of a level
