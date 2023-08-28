@@ -29,54 +29,54 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.GetInt("Diammond5d", 0);
 
         //kazanýnca buton büyüyüp küçülsün:
-        if (PlayerPrefs.GetFloat("high") >= 250 && PlayerPrefs.GetInt("Coin100") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 5 && PlayerPrefs.GetInt("Coin100") == 0)
         {
 
             buttons[0].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 500 && PlayerPrefs.GetInt("Diammond2a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 10 && PlayerPrefs.GetInt("Diammond2a") == 0)
         {
             buttons[1].animator.SetBool("Highlighted", true);
         }
 
 
-        if (PlayerPrefs.GetFloat("high") >= 1000 && PlayerPrefs.GetInt("Diammond3a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 25 && PlayerPrefs.GetInt("Diammond3a") == 0)
         {
             buttons[2].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 1500 && PlayerPrefs.GetInt("Diammond5a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 40 && PlayerPrefs.GetInt("Diammond5a") == 0)
         {
             buttons[3].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 2000 && PlayerPrefs.GetInt("Diammond7") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 3 && PlayerPrefs.GetInt("Diammond7") == 0)
         {
             buttons[4].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 2500 && PlayerPrefs.GetInt("Diammond10") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Diammond10") == 0)
         {
             buttons[5].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Coin300") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Coin300") == 0)
         {
             buttons[6].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Diammond2b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond2b") == 0)
         {
             buttons[7].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 15 && PlayerPrefs.GetInt("Diammond3b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 30 && PlayerPrefs.GetInt("Diammond3b") == 0)
         {
             buttons[8].animator.SetBool("Highlighted", true);
         }
 
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond5b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 40 && PlayerPrefs.GetInt("Diammond5b") == 0)
         {
             buttons[9].animator.SetBool("Highlighted", true);
         }
@@ -86,7 +86,7 @@ public class Achievements : MonoBehaviour
     void Update()
     {
 
-        if (PlayerPrefs.GetFloat("high") >= 250 && PlayerPrefs.GetInt("Coin100") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 5 && PlayerPrefs.GetInt("Coin100") == 0)
         {
             buttons[0].interactable = true;
         }
@@ -99,7 +99,7 @@ public class Achievements : MonoBehaviour
             locks[0].enabled = false;
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 500 && PlayerPrefs.GetInt("Diammond2a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 10 && PlayerPrefs.GetInt("Diammond2a") == 0)
         {
             buttons[1].interactable = true;
         }
@@ -112,7 +112,7 @@ public class Achievements : MonoBehaviour
             locks[1].enabled = false;
         }
 
-        if (PlayerPrefs.GetFloat("high") >= 1000 && PlayerPrefs.GetInt("Diammond3a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 25 && PlayerPrefs.GetInt("Diammond3a") == 0)
         {
             buttons[2].interactable = true;
         }
@@ -124,7 +124,7 @@ public class Achievements : MonoBehaviour
         {
             locks[2].enabled = false;
         }
-        if (PlayerPrefs.GetFloat("high") >= 1500 && PlayerPrefs.GetInt("Diammond5a") == 0)
+        if (PlayerPrefs.GetFloat("high") >= 40 && PlayerPrefs.GetInt("Diammond5a") == 0)
         {
             buttons[3].interactable = true;
         }
@@ -136,7 +136,7 @@ public class Achievements : MonoBehaviour
         {
             locks[3].enabled = false;
         }
-        if (PlayerPrefs.GetFloat("high") >= 2000 && PlayerPrefs.GetInt("Diammond7") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 3 && PlayerPrefs.GetInt("Diammond7") == 0)
         {
             buttons[4].interactable = true;
         }
@@ -148,7 +148,7 @@ public class Achievements : MonoBehaviour
         {
             locks[4].enabled = false;
         }
-        if (PlayerPrefs.GetFloat("high") >= 2500 && PlayerPrefs.GetInt("Diammond10") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Diammond10") == 0)
         {
             buttons[5].interactable = true;
         }
@@ -160,7 +160,7 @@ public class Achievements : MonoBehaviour
         {
             locks[5].enabled = false;
         }
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Coin300") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Coin300") == 0)
         {
             buttons[6].interactable = true;
         }
@@ -172,7 +172,7 @@ public class Achievements : MonoBehaviour
         {
             locks[6].enabled = false;
         }
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Diammond2b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond2b") == 0)
         {
             buttons[7].interactable = true;
         }
@@ -184,7 +184,7 @@ public class Achievements : MonoBehaviour
         {
             locks[7].enabled = false;
         }
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 15 && PlayerPrefs.GetInt("Diammond3b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 30 && PlayerPrefs.GetInt("Diammond3b") == 0)
         {
             buttons[8].interactable = true;
         }
@@ -196,7 +196,7 @@ public class Achievements : MonoBehaviour
         {
             locks[8].enabled = false;
         }
-        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond5b") == 0)
+        if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 40 && PlayerPrefs.GetInt("Diammond5b") == 0)
         {
             buttons[9].interactable = true;
         }
@@ -230,9 +230,9 @@ public class Achievements : MonoBehaviour
     }
     public void Diamond2a()
     {
-        diamondValue = PlayerPrefs.GetInt("Diamond");
-        diamondValue += 2;
-        PlayerPrefs.SetInt("Diamond", diamondValue);
+        coinValue = PlayerPrefs.GetInt("TotalCoins");
+        coinValue += 250;
+        PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond2a", 1);
         PlayerPrefs.Save();
     }
@@ -310,24 +310,24 @@ public class Achievements : MonoBehaviour
     }
     public void Diamond7()
     {
-        diamondValue = PlayerPrefs.GetInt("Diamond");
-        diamondValue += 7;
-        PlayerPrefs.SetInt("Diamond", diamondValue);
+        coinValue = PlayerPrefs.GetInt("TotalCoins");
+        coinValue += 150;
+        PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond7", 1);
         PlayerPrefs.Save();
     }
     public void Diamond10()
     {
-        diamondValue = PlayerPrefs.GetInt("Diamond");
-        diamondValue += 10;
-        PlayerPrefs.SetInt("Diamond", diamondValue);
+        coinValue = PlayerPrefs.GetInt("TotalCoins");
+        coinValue += 200;
+        PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond10", 1);
         PlayerPrefs.Save();
     }
     public void Coin100()
     {
         coinValue = PlayerPrefs.GetInt("TotalCoins");
-        coinValue += 100;
+        coinValue += 150;
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Coin100", 1);
         PlayerPrefs.Save();

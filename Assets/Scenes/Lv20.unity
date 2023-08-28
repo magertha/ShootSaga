@@ -494,8 +494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34585404, y: 0.25444105}
   m_AnchorMax: {x: 0.96062, y: 0.7941399}
-  m_AnchoredPosition: {x: 0.124572754, y: -2.7267456}
-  m_SizeDelta: {x: 0.94960785, y: -9.963379}
+  m_AnchoredPosition: {x: 1.0215988, y: -4.2547}
+  m_SizeDelta: {x: -29.5492, y: 8.5094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97904900
 MonoBehaviour:
@@ -544,10 +544,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 46.25
   m_fontSizeBase: 55
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -4229,7 +4229,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.0928564
+  orthographic size: 5.0073485
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4551,8 +4551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.171, y: 0.26751038}
   m_AnchorMax: {x: 0.8385166, y: 0.7015104}
-  m_AnchoredPosition: {x: -1.5, y: 2}
-  m_SizeDelta: {x: -5, y: -6}
+  m_AnchoredPosition: {x: -3.9850998, y: 0.2642994}
+  m_SizeDelta: {x: 7.9698, y: 19.1184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679241259
 MonoBehaviour:
@@ -4601,10 +4601,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 37.85
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -5105,7 +5105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823569589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
+  m_LocalPosition: {x: 0, y: 5.2273483, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5756,7 +5756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911783698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -5.3928566, z: 6}
+  m_LocalPosition: {x: -0.04, y: -4.3073487, z: 6}
   m_LocalScale: {x: 0.476259, y: 0.44904673, z: 0.44904673}
   m_ConstrainProportionsScale: 0
   m_Children:
