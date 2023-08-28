@@ -306,11 +306,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 21464315}
-  coinText: {fileID: 0}
-  coinsEarned: 200
+  coinText: {fileID: 877890390}
+  coinsEarned: 210
   outofm: {fileID: 308147081}
   over: {fileID: 1177052037}
-  cleared: {fileID: 0}
+  cleared: {fileID: 270212646}
 --- !u!114 &21464315
 MonoBehaviour:
   m_ObjectHideFlags: 0
