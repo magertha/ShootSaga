@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "101921763760",
+    "project_id": "shoot-saga",
+    "storage_bucket": "shoot-saga.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101921763760:android:fc52af682039e6e815e675",
+        "android_client_info": {
+          "package_name": "com.CerebrumTech.ShootSaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101921763760-3tcohpo6otcueq2c19f5f43btr41qjki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB68OoeTDtLsxl_jhiIqtFZ4zZfF7TP1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101921763760-3tcohpo6otcueq2c19f5f43btr41qjki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101921763760:android:400573386eb2313a15e675",
+        "android_client_info": {
+          "package_name": "com.CerebrumTech.shootsaga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101921763760-3tcohpo6otcueq2c19f5f43btr41qjki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB68OoeTDtLsxl_jhiIqtFZ4zZfF7TP1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101921763760-3tcohpo6otcueq2c19f5f43btr41qjki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
