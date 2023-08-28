@@ -5032,7 +5032,7 @@ MonoBehaviour:
   Ball5: {fileID: 3325024333122030058, guid: e9d0d873dc2b95d43827ae969559558a, type: 3}
   Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
   x: -2
-  y: -2
+  y: -3.5
   z: 4
 --- !u!212 &1869193741
 SpriteRenderer:

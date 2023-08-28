@@ -426,11 +426,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 68204430}
-  coinText: {fileID: 0}
+  coinText: {fileID: 2079370472}
   coinsEarned: 200
   outofm: {fileID: 1124832275}
   over: {fileID: 629416048}
-  cleared: {fileID: 0}
+  cleared: {fileID: 2124749734}
 --- !u!114 &68204430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,7 +544,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.25
+  m_fontSize: 60.55
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4229,7 +4229,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.0073485
+  orthographic size: 6.0928564
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4601,7 +4601,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.85
+  m_fontSize: 46.9
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5105,7 +5105,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823569589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.2273483, z: 100}
+  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5756,7 +5756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911783698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -4.3073487, z: 6}
+  m_LocalPosition: {x: -0.04, y: -5.3928566, z: 6}
   m_LocalScale: {x: 0.476259, y: 0.44904673, z: 0.44904673}
   m_ConstrainProportionsScale: 0
   m_Children:
