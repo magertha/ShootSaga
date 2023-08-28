@@ -4007,7 +4007,7 @@ MonoBehaviour:
   LC: 0
   coinSystem: {fileID: 1117400493}
   coinText: {fileID: 1855788086}
-  coinsEarned: 180
+  coinsEarned: 100
   outofm: {fileID: 1917314340}
   over: {fileID: 413845888}
   cleared: {fileID: 1266312168}
@@ -5762,7 +5762,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: + 180 coins
+  m_text: + 100 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}

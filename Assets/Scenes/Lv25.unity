@@ -1112,7 +1112,7 @@ MonoBehaviour:
   LC: 0
   coinSystem: {fileID: 210589667}
   coinText: {fileID: 1882235247}
-  coinsEarned: 230
+  coinsEarned: 250
   outofm: {fileID: 452249181}
   over: {fileID: 1778700143}
   cleared: {fileID: 258760626}
@@ -2101,7 +2101,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614283434}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 2.7329, y: -0.3924, z: 99.82199}
+  m_LocalPosition: {x: 2.7329, y: -1.51, z: 99.82199}
   m_LocalScale: {x: 0.22940116, y: 0.22293955, z: 0.05762728}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2387,7 +2387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 673773509}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -1.13, y: 2.47, z: 0}
+  m_LocalPosition: {x: -1.41, y: 2.47, z: 0}
   m_LocalScale: {x: 0.3454377, y: 0.2563162, z: 0.2563162}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3743,10 +3743,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 47.7
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -8.612305, z: 0, w: -17.599365}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6064,7 +6064,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652532400}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -1.5390576, y: 0.51594687, z: 27}
+  m_LocalPosition: {x: -1.54, y: 0.398, z: 27}
   m_LocalScale: {x: 0.036743186, y: 0.903466, z: 0.49214}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7182,7 +7182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008312499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.15, y: 0.71, z: 0}
+  m_LocalPosition: {x: 0.75, y: 0.71, z: 0}
   m_LocalScale: {x: 0.3454377, y: 0.2563162, z: 0.2563162}
   m_ConstrainProportionsScale: 0
   m_Children:
