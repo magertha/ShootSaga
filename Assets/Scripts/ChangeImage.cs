@@ -14,11 +14,11 @@ public class ChangeImage : MonoBehaviour
 
     void Start()
     {
-        if (gamemusic.volume == 0)
+        if (AudioManager.Instance.MusicSource.mute)
         {
             button.image.sprite = soundOffImage;
         }
-        if (gamemusic.volume == 0.4f)
+        else 
         {
             button.image.sprite = soundOnImage;
         }
@@ -32,17 +32,18 @@ public class ChangeImage : MonoBehaviour
 
     public void ButtonClicked()
     {
+        AudioManager.Instance.PlaySFX("Click");
         if (isOn == true)
         {
             button.image.sprite = soundOffImage;
             isOn = false;
-            gamemusic.volume = 0;
+            AudioManager.Instance.MusicSource.mute = true;
         }
         else
         {
             button.image.sprite = soundOnImage;
             isOn = true;
-            gamemusic.volume = 0.4f;
+            AudioManager.Instance.MusicSource.mute = false;
         }
     }
 }

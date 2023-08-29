@@ -12,11 +12,11 @@ public class ChangeSFX : MonoBehaviour
 
     void Start()
     {
-        if (AudioListener.volume == 0)
+        if (AudioManager.Instance.SFXSource.mute)
         {
             button.image.sprite = soundOffImage;
         }
-        if (AudioListener.volume == 1)
+        else
         {
             button.image.sprite = soundOnImage;
         }
@@ -24,17 +24,18 @@ public class ChangeSFX : MonoBehaviour
 
     public void ButtonClicked()
     {
+        AudioManager.Instance.PlaySFX("Click");
         if (isOn == true)
         {
             button.image.sprite = soundOffImage;
             isOn = false;
-            AudioListener.volume = 0;
+            AudioManager.Instance.SFXSource.mute = true;
         }
         else
         {
             button.image.sprite = soundOnImage;
             isOn = true;
-            AudioListener.volume = 1;
+            AudioManager.Instance.SFXSource.mute = false;
         }
     }
 }

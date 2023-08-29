@@ -8,6 +8,7 @@ public class LeaderButton : MonoBehaviour
     public GameObject leaderboard;
     public void Leader()
     {
+        AudioManager.Instance.PlaySFX("Click");
         leaderboard.SetActive(true);
     }
 }

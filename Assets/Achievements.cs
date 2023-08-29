@@ -217,7 +217,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond1a", 1);
         PlayerPrefs.Save();
-
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond1b()
     {
@@ -226,7 +226,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond1b", 1);
         PlayerPrefs.Save();
-
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond2a()
     {
@@ -235,6 +235,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond2a", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond2b()
     {
@@ -243,6 +244,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond2b", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond3a()
     {
@@ -251,6 +253,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond3a", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond3b()
     {
@@ -259,6 +262,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond3b", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond3c()
     {
@@ -267,6 +271,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond3c", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond3d()
     {
@@ -275,6 +280,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond3d", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond5a()
     {
@@ -283,6 +289,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond5a", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond5b()
     {
@@ -291,6 +298,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond5b", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond5c()
     {
@@ -299,6 +307,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond5c", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond5d()
     {
@@ -307,6 +316,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diamond", diamondValue);
         PlayerPrefs.SetInt("Diammond5d", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond7()
     {
@@ -315,6 +325,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond7", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Diamond10()
     {
@@ -323,6 +334,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Diammond10", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Coin100()
     {
@@ -331,6 +343,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Coin100", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
     public void Coin300()
     {
@@ -339,6 +352,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("TotalCoins", coinValue);
         PlayerPrefs.SetInt("Coin300", 1);
         PlayerPrefs.Save();
+        AudioManager.Instance.PlaySFX("Click");
     }
 
 

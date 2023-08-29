@@ -7,6 +7,7 @@ public class Home : MonoBehaviour
 {   
     public void GoHome()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene(0);
     }
 }

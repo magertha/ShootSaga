@@ -25,7 +25,7 @@ public class BulletRestart : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gameOverScreen.Setup();
-
+            AudioManager.Instance.PlaySFX("Cut");
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Counter>().enabled = false;
 
         }

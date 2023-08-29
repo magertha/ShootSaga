@@ -7,6 +7,7 @@ public class LevelsButton : MonoBehaviour
 {   
     public void Levels()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene(21);
     }
 }

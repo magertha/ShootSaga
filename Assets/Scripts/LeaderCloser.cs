@@ -8,6 +8,7 @@ public class LeaderCloser : MonoBehaviour
 
     public void Closer()
     {
+        AudioManager.Instance.PlaySFX("Click");
         leaderboard.SetActive(false);
     }
 }

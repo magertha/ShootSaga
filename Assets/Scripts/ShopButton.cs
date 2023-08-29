@@ -7,6 +7,7 @@ public class ShopButton : MonoBehaviour
 {   
     public void Shop()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene(22);
     }
 }

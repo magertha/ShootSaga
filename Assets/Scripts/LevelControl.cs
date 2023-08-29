@@ -86,7 +86,7 @@ public class LevelControl : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Rigidbody2D ballRigidbody = bal.GetComponent<Rigidbody2D>();
-
+            AudioManager.Instance.PlaySFX("Net");
             // Check if the ball is moving from up to down
             if (ballRigidbody.velocity.y < 0.1f)
             {

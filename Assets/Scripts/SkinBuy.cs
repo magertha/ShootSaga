@@ -56,6 +56,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball1Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(true);
             Ball2Equiped.gameObject.SetActive(false);
@@ -70,6 +71,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall3") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball3Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -84,6 +86,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall2") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball2Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(true);
@@ -98,6 +101,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall4") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball4Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -112,6 +116,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall5") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball5Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -126,6 +131,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipDefault") == 1)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball2Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -148,6 +154,7 @@ public class SkinBuy : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 200)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball1Buyer.gameObject.SetActive(false);
             currentCoin -= 100;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
@@ -160,6 +167,7 @@ public class SkinBuy : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 500)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball2Buyer.gameObject.SetActive(false);
             currentCoin -= 300;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
@@ -172,6 +180,7 @@ public class SkinBuy : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 1000)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball3Buyer.gameObject.SetActive(false);
             currentCoin -= 500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
@@ -184,6 +193,7 @@ public class SkinBuy : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 2500)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball4Buyer.gameObject.SetActive(false);
             currentCoin -= 800;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
@@ -196,6 +206,7 @@ public class SkinBuy : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 4000)
         {
+            AudioManager.Instance.PlaySFX("Click");
             Ball5Buyer.gameObject.SetActive(false);
             currentCoin -= 1500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
@@ -210,6 +221,7 @@ public class SkinBuy : MonoBehaviour
 
     public void Ball3Equip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball3Equiper.gameObject.SetActive(false);
         Ball3Equiped.gameObject.SetActive(true);
         Ball1Equiper.gameObject.SetActive(true);
@@ -226,6 +238,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball1Equip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball3Equiper.gameObject.SetActive(true);
         Ball1Equiped.gameObject.SetActive(true);
         Ball2Equiper.gameObject.SetActive(true);
@@ -242,6 +255,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball2Equip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball2Equiped.gameObject.SetActive(true);
         Ball3Equiper.gameObject.SetActive(true);
         Ball1Equiper.gameObject.SetActive(true);
@@ -259,6 +273,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball4Equip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball4Equiped.gameObject.SetActive(true);
         Ball3Equiper.gameObject.SetActive(true);
         Ball1Equiper.gameObject.SetActive(true);
@@ -276,6 +291,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball5Equip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball5Equiped.gameObject.SetActive(true);
         Ball3Equiper.gameObject.SetActive(true);
         Ball1Equiper.gameObject.SetActive(true);
@@ -293,6 +309,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void DefaultEquip()
     {
+        AudioManager.Instance.PlaySFX("Click");
         Ball3Equiper.gameObject.SetActive(true);
         Ball1Equiper.gameObject.SetActive(true);
         Ball2Equiper.gameObject.SetActive(true);

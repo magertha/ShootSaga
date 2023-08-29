@@ -9,6 +9,9 @@ TagManager:
   - OutOfMovesScreen
   - LevelCleared
   - EventSystem
+  - Bullet
+  - Teleporter
+  - Jump
   layers:
   - Default
   - TransparentFX

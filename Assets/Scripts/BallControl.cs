@@ -118,5 +118,15 @@ public class BallControl : MonoBehaviour
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        AudioManager.Instance.PlaySFX("Bounce");
 
+        if (collision.gameObject.CompareTag("Jump"))
+        {
+            AudioManager.Instance.PlaySFX("Boing");
+        }
+    }
+    
+    
 }

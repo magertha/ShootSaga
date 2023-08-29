@@ -7,6 +7,7 @@ public class EndlessButton : MonoBehaviour
 {
     public void Endless()
     {
+        AudioManager.Instance.PlaySFX("Click");
         SceneManager.LoadScene(23);
     }
 }
