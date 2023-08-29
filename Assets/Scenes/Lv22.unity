@@ -3403,7 +3403,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1020077061}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69, y: -3.28, z: 150}
+  m_LocalPosition: {x: -0.69, y: -3.28, z: 100}
   m_LocalScale: {x: 0.4721143, y: 0.8211049, z: 0.5614393}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3622,7 +3622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: + 220 coins
+  m_text: + 100 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -3731,11 +3731,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 1185694323}
-  coinText: {fileID: 0}
-  coinsEarned: 200
+  coinText: {fileID: 1125250348}
+  coinsEarned: 100
   outofm: {fileID: 1452874843}
   over: {fileID: 2028601726}
-  cleared: {fileID: 0}
+  cleared: {fileID: 702750051}
 --- !u!114 &1185694323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4794,7 +4794,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628438908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69, y: -3.28, z: 150}
+  m_LocalPosition: {x: -0.69, y: -3.28, z: 100}
   m_LocalScale: {x: 0.4721143, y: 0.8211049, z: 0.5614393}
   m_ConstrainProportionsScale: 0
   m_Children: []

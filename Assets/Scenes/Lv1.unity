@@ -2734,7 +2734,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377161156}
   m_CullTransparentMesh: 1
---- !u!1 &1386584267
+--- !u!1 &1423518195
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2742,9 +2742,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1386584270}
-  - component: {fileID: 1386584269}
-  - component: {fileID: 1386584268}
+  - component: {fileID: 1423518196}
+  - component: {fileID: 1423518198}
+  - component: {fileID: 1423518197}
   m_Layer: 5
   m_Name: CoinsEarned
   m_TagString: Untagged
@@ -2752,13 +2752,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1386584268
+--- !u!224 &1423518196
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423518195}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1524769912}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.2924155, y: 0.3302322}
+  m_AnchorMax: {x: 0.75516915, y: 0.37579027}
+  m_AnchoredPosition: {x: 2, y: -0.5}
+  m_SizeDelta: {x: -7.1798706, y: -4.9907837}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1423518197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386584267}
+  m_GameObject: {fileID: 1423518195}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -2841,34 +2861,14 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1386584269
+--- !u!222 &1423518198
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386584267}
+  m_GameObject: {fileID: 1423518195}
   m_CullTransparentMesh: 1
---- !u!224 &1386584270
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1386584267}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1524769912}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.2924155, y: 0.3302322}
-  m_AnchorMax: {x: 0.75516915, y: 0.37579027}
-  m_AnchoredPosition: {x: 2, y: -0.5}
-  m_SizeDelta: {x: -7.179901, y: -4.9907837}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1498363454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,7 +3047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 1503634249}
-  coinText: {fileID: 1386584268}
+  coinText: {fileID: 1423518197}
   coinsEarned: 10
   outofm: {fileID: 454403306}
   over: {fileID: 69681665}
@@ -3148,7 +3148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 1524769913}
-  coinText: {fileID: 1386584268}
+  coinText: {fileID: 0}
   coinsEarned: 10
   outofm: {fileID: 454403306}
   over: {fileID: 1155819415}
@@ -3168,7 +3168,7 @@ RectTransform:
   - {fileID: 882041087}
   - {fileID: 1793795161}
   - {fileID: 287258485}
-  - {fileID: 1386584270}
+  - {fileID: 1423518196}
   m_Father: {fileID: 61884249}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

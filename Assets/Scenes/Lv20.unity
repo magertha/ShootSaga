@@ -426,11 +426,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LC: 0
   coinSystem: {fileID: 68204430}
-  coinText: {fileID: 0}
+  coinText: {fileID: 2079370472}
   coinsEarned: 200
   outofm: {fileID: 1124832275}
   over: {fileID: 629416048}
-  cleared: {fileID: 0}
+  cleared: {fileID: 2124749734}
 --- !u!114 &68204430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -494,8 +494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.34585404, y: 0.25444105}
   m_AnchorMax: {x: 0.96062, y: 0.7941399}
-  m_AnchoredPosition: {x: 0.124572754, y: -2.7267456}
-  m_SizeDelta: {x: 0.94960785, y: -9.963379}
+  m_AnchoredPosition: {x: 1.0215988, y: -4.2547}
+  m_SizeDelta: {x: -29.5492, y: 8.5094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97904900
 MonoBehaviour:
@@ -544,10 +544,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
+  m_fontSize: 60.55
   m_fontSizeBase: 55
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -4551,8 +4551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.171, y: 0.26751038}
   m_AnchorMax: {x: 0.8385166, y: 0.7015104}
-  m_AnchoredPosition: {x: -1.5, y: 2}
-  m_SizeDelta: {x: -5, y: -6}
+  m_AnchoredPosition: {x: -3.9850998, y: 0.2642994}
+  m_SizeDelta: {x: 7.9698, y: 19.1184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679241259
 MonoBehaviour:
@@ -4601,10 +4601,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 46.9
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
