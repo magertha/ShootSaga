@@ -67,9 +67,9 @@ EditorBuildSettings:
     guid: 5dfb3103e521dc142aaa239ebe5393da
   - enabled: 1
     path: Assets/Scenes/Lv20.unity
-    guid: c45559445f599f248a0ff598afc6cf5c
+    guid: eb30deee59418d84e941e4b80c6a9662
   - enabled: 1
-    path: Assets/Scenes/Lv21.unity
+    path: Assets/Scenes/LvYedek2.unity
     guid: e5525bb64381ff846be8fede717258e5
   - enabled: 1
     path: Assets/Scenes/Lv22.unity
@@ -98,6 +98,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lv30.unity
     guid: d99c3311f3e08494fa45d99eccc778c6
+  - enabled: 0
+    path: Assets/Scenes/LvYedek1.unity
+    guid: c45559445f599f248a0ff598afc6cf5c
   - enabled: 1
     path: Assets/Scenes/LevelsMain.unity
     guid: 9f0280f762ad5ed448a5a57bcfbd3a2b
