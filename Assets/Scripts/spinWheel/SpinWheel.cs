@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public class SpinWheel
+public class SpinWheel : MonoBehaviour
 {
 
     float degrees = 360f;
@@ -11,7 +11,7 @@ public class SpinWheel
     float timeToSlow = 1f;
     float offSet = 0f;
     float speed = 20f;
-    GameObject go;
+    public GameObject go;
 
     Action<int> reward;
 
