@@ -494,7 +494,6 @@ GameObject:
   - component: {fileID: 157452144}
   - component: {fileID: 157452143}
   - component: {fileID: 157452142}
-  - component: {fileID: 157452141}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -519,21 +518,6 @@ Transform:
   m_Father: {fileID: 102815593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &157452141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157452139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc98e75afebb5414582e3f8e402516db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Click: {fileID: 0}
-  Bounce: {fileID: 0}
-  Net: {fileID: 0}
 --- !u!114 &157452142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touches: 0
-  touchLimiter: 4
+  touchLimiter: 5
   ballControl: {fileID: 0}
 --- !u!61 &157452143
 BoxCollider2D:
@@ -1042,7 +1026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407626448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.25, y: 1.58, z: -52.992405}
+  m_LocalPosition: {x: 1.09, y: 1.58, z: -52.992405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2969,7 +2953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 1479961217}
-  count: 4
+  count: 5
 --- !u!114 &1100225133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3410,7 +3394,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x4
+  m_text: x5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
