@@ -1529,8 +1529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnee: {fileID: 3340972592596459259, guid: 2af3b0be3c0c9c34a966e0710b68afc5, type: 3}
-  spawnTime: 0.2
-  spawnDelay: 2.55
+  spawnTime: 0.35
+  spawnDelay: 3
 --- !u!4 &487022890
 Transform:
   m_ObjectHideFlags: 0
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x4
+  m_text: x5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -2959,7 +2959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 718345714}
-  count: 4
+  count: 5
 --- !u!114 &884467320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,7 +4574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touches: 0
-  touchLimiter: 4
+  touchLimiter: 5
   ballControl: {fileID: 0}
 --- !u!61 &1661662733
 BoxCollider2D:

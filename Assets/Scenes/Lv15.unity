@@ -1900,8 +1900,8 @@ GameObject:
   - component: {fileID: 318148109}
   - component: {fileID: 318148108}
   - component: {fileID: 318148107}
-  - component: {fileID: 318148106}
   - component: {fileID: 318148110}
+  - component: {fileID: 318148111}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -1918,33 +1918,12 @@ Transform:
   m_GameObject: {fileID: 318148104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.4, y: 1.7, z: 5}
-  m_LocalScale: {x: 3.4401405, y: 4.8676386, z: 11.413705}
+  m_LocalScale: {x: 3.44014, y: 4.8676386, z: 11.4137}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 746199048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &318148106
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318148104}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de22a143b889d1d4983e1a7aeb78659c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &318148107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1960,6 +1939,7 @@ MonoBehaviour:
   lavaL: {fileID: 53318594}
   lavaR: {fileID: 993975035}
   platform: {fileID: 555689530}
+  button: {fileID: 0}
 --- !u!61 &318148108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2052,6 +2032,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lavaLe: {fileID: 865122610}
   lavaRi: {fileID: 241361762}
+  button2: {fileID: 318148111}
+--- !u!95 &318148111
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318148104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 458fdea014a48f14894afda96514c9ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &329010418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,7 +2407,7 @@ Transform:
   m_GameObject: {fileID: 501932821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.8, y: 1.7, z: 5}
-  m_LocalScale: {x: 3.320609, y: 4.867564, z: 11.413705}
+  m_LocalScale: {x: 3.320609, y: 4.867564, z: 11.4137}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1637107116}
@@ -2426,6 +2428,7 @@ MonoBehaviour:
   lavaL: {fileID: 538734107}
   lavaR: {fileID: 937026153}
   platform: {fileID: 746199045}
+  button: {fileID: 501932826}
 --- !u!61 &501932824
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2514,7 +2517,7 @@ Animator:
   m_GameObject: {fileID: 501932821}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de22a143b889d1d4983e1a7aeb78659c, type: 2}
+  m_Controller: {fileID: 9100000, guid: a413b5453a61a0f4cb1a1aa783ab7419, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

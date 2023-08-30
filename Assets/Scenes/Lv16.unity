@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterText: {fileID: 1490928660}
-  count: 2
+  count: 3
 --- !u!114 &86414497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touches: 0
-  touchLimiter: 2
+  touchLimiter: 3
   ballControl: {fileID: 0}
 --- !u!61 &744218710
 BoxCollider2D:
@@ -2424,7 +2424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 1222612194127544534, guid: 5644608ad6fe5644aabc0edb5f1497a0, type: 3}
   spawnTime: 0
-  spawnDelay: 1.5
+  spawnDelay: 1.8
 --- !u!1 &1046738027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x2
+  m_text: x3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -4308,7 +4308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 1222612194127544534, guid: 5644608ad6fe5644aabc0edb5f1497a0, type: 3}
   spawnTime: 0
-  spawnDelay: 1.5
+  spawnDelay: 1.8
 --- !u!1 &1795464328
 GameObject:
   m_ObjectHideFlags: 0

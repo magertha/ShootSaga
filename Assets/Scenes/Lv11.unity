@@ -2447,7 +2447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 3340972592596459259, guid: 2af3b0be3c0c9c34a966e0710b68afc5, type: 3}
   spawnTime: 0
-  spawnDelay: 1.2
+  spawnDelay: 2
 --- !u!4 &1132906139
 Transform:
   m_ObjectHideFlags: 0
@@ -4485,7 +4485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 5942517986696670967, guid: 129196a2cf6dad549b7d27432593c520, type: 3}
   spawnTime: 0
-  spawnDelay: 1.2
+  spawnDelay: 4
 --- !u!1 &1693642496
 GameObject:
   m_ObjectHideFlags: 0
