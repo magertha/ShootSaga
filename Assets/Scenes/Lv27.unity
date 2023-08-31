@@ -3064,7 +3064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   influenceRange: 2.8
-  intensity: 12
+  intensity: 120
   distanceToPlayer: 0
 --- !u!58 &1062044859
 CircleCollider2D:
