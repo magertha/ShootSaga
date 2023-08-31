@@ -8048,6 +8048,17 @@ MonoBehaviour:
   - {fileID: 499727883}
   - {fileID: 309538902}
   - {fileID: 1409983748}
+  texts:
+  - {fileID: 1074715402}
+  - {fileID: 1108785798}
+  - {fileID: 567895954}
+  - {fileID: 1143110836}
+  - {fileID: 1038492649}
+  - {fileID: 805195564}
+  - {fileID: 660201132}
+  - {fileID: 832728281}
+  - {fileID: 39312269}
+  - {fileID: 1873711176}
 --- !u!1 &988553937
 GameObject:
   m_ObjectHideFlags: 0

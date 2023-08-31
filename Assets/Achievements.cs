@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class Achievements : MonoBehaviour
 {
     private int diamondValue;
     private int coinValue;
     public Button[] buttons;
     public Image[] locks;
-
+    public TMP_Text[] texts;
     private void Start()
     {
         PlayerPrefs.GetInt("Coin100", 0);
@@ -33,52 +34,62 @@ public class Achievements : MonoBehaviour
         {
 
             buttons[0].animator.SetBool("Highlighted", true);
+            texts[0].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetFloat("high") >= 10 && PlayerPrefs.GetInt("Diammond2a") == 0)
         {
             buttons[1].animator.SetBool("Highlighted", true);
+            texts[1].color = new Color32(0, 149, 24, 255);
         }
 
 
         if (PlayerPrefs.GetFloat("high") >= 25 && PlayerPrefs.GetInt("Diammond3a") == 0)
         {
             buttons[2].animator.SetBool("Highlighted", true);
+            texts[2].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetFloat("high") >= 40 && PlayerPrefs.GetInt("Diammond5a") == 0)
         {
             buttons[3].animator.SetBool("Highlighted", true);
+            texts[3].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 3 && PlayerPrefs.GetInt("Diammond7") == 0)
         {
             buttons[4].animator.SetBool("Highlighted", true);
+            texts[4].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Diammond10") == 0)
         {
             buttons[5].animator.SetBool("Highlighted", true);
+            texts[5].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Coin300") == 0)
         {
             buttons[6].animator.SetBool("Highlighted", true);
+            texts[6].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond2b") == 0)
         {
             buttons[7].animator.SetBool("Highlighted", true);
+            texts[7].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 30 && PlayerPrefs.GetInt("Diammond3b") == 0)
         {
             buttons[8].animator.SetBool("Highlighted", true);
+            texts[8].color = new Color32(0, 149, 24, 255);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 40 && PlayerPrefs.GetInt("Diammond5b") == 0)
         {
             buttons[9].animator.SetBool("Highlighted", true);
+            texts[9].color = new Color32(0, 149, 24, 255);
         }
     }
 
