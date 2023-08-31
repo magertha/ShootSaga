@@ -1758,7 +1758,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 10
   m_AngularDrag: 10
-  m_GravityScale: 1
+  m_GravityScale: 0.95
   m_Material: {fileID: 6200000, guid: 22872e13dae162e4ab7a97f9bb952099, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -4484,7 +4484,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 10
   m_AngularDrag: 10
-  m_GravityScale: 1
+  m_GravityScale: 0.95
   m_Material: {fileID: 6200000, guid: 22872e13dae162e4ab7a97f9bb952099, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -4787,7 +4787,7 @@ Rigidbody2D:
   m_Mass: 20
   m_LinearDrag: 10
   m_AngularDrag: 10
-  m_GravityScale: 1
+  m_GravityScale: 0.95
   m_Material: {fileID: 6200000, guid: 22872e13dae162e4ab7a97f9bb952099, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
