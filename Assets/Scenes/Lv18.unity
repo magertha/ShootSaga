@@ -531,7 +531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 5942517986696670967, guid: 129196a2cf6dad549b7d27432593c520, type: 3}
   spawnTime: 0
-  spawnDelay: 1.5
+  spawnDelay: 1
 --- !u!1 &192411877
 GameObject:
   m_ObjectHideFlags: 0
