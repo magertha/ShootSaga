@@ -11,8 +11,25 @@ public class SkinBuy : MonoBehaviour
     public Button Ball3Buyer,Ball3Equiper,Ball3Equiped;
     public Button Ball4Buyer, Ball4Equiper, Ball4Equiped;
     public Button Ball5Buyer, Ball5Equiper, Ball5Equiped;
+    public Button Ball6Buyer, Ball6Equiper, Ball6Equiped;
+    public Button Ball7Buyer, Ball7Equiper, Ball7Equiped;
+    public Button Ball8Buyer, Ball8Equiper, Ball8Equiped;
+    public Button Ball9Buyer, Ball9Equiper, Ball9Equiped;
+    public Button Ball10Buyer, Ball10Equiper, Ball10Equiped;
+    public Button Ball11Buyer, Ball11Equiper, Ball11Equiped;
+    public Button Ball12Buyer, Ball12Equiper, Ball12Equiped;
+    public Button Ball13Buyer, Ball13Equiper, Ball13Equiped;
+    public Button Ball14Buyer, Ball14Equiper, Ball14Equiped;
+    public Button Ball15Buyer, Ball15Equiper, Ball15Equiped;
+    public Button Ball16Buyer, Ball16Equiper, Ball16Equiped;
+    public Button Ball17Buyer, Ball17Equiper, Ball17Equiped;
+    public Button Ball18Buyer, Ball18Equiper, Ball18Equiped;
+    public Button Ball19Buyer, Ball19Equiper, Ball19Equiped;
     public Button DefaultSkinEquiper, DefaultSkinEquiped;
     public int haveBall1, haveBall2, haveBall3, haveBall4, haveBall5, equipBall1,equipBall2,equipBall3,equipBall4, equipBall5, equipDefault;
+    public int haveBall6, haveBall7, haveBall8, haveBall9, haveBall10, equipBall6, equipBall7, equipBall8, equipBall9, equipBall10;
+    public int haveBall11, haveBall12, haveBall13, haveBall14, haveBall15, equipBall11, equipBall12, equipBall13, equipBall14, equipBall15;
+    public int haveBall16, haveBall17, haveBall18, haveBall19, equipBall16, equipBall17, equipBall18, equipBall19;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +39,39 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.GetInt("haveBall2", 0);
         PlayerPrefs.GetInt("haveBall4", 0);
         PlayerPrefs.GetInt("haveBall5", 0);
+        PlayerPrefs.GetInt("haveBall6", 0);
+        PlayerPrefs.GetInt("haveBall7", 0);
+        PlayerPrefs.GetInt("haveBall8", 0);
+        PlayerPrefs.GetInt("haveBall9", 0);
+        PlayerPrefs.GetInt("haveBall10", 0);
+        PlayerPrefs.GetInt("haveBall11", 0);
+        PlayerPrefs.GetInt("haveBall12", 0);
+        PlayerPrefs.GetInt("haveBall13", 0);
+        PlayerPrefs.GetInt("haveBall14", 0);
+        PlayerPrefs.GetInt("haveBall15", 0);
+        PlayerPrefs.GetInt("haveBall16", 0);
+        PlayerPrefs.GetInt("haveBall17", 0);
+        PlayerPrefs.GetInt("haveBall18", 0);
+        PlayerPrefs.GetInt("haveBall19", 0);
         PlayerPrefs.GetInt("equipBall1", 0);
         PlayerPrefs.GetInt("equipBall3", 0);
         PlayerPrefs.GetInt("equipBall2", 0);
         PlayerPrefs.GetInt("equipBall4", 0);
         PlayerPrefs.GetInt("equipBall5", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
         PlayerPrefs.GetInt("equipDefault", 0);
     }
 
@@ -54,6 +99,63 @@ public class SkinBuy : MonoBehaviour
         {
             Ball5Buyer.gameObject.SetActive(false);
         }
+        if (PlayerPrefs.GetInt("haveBall6") == 1)
+        {
+            Ball6Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall7") == 1)
+        {
+            Ball7Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall8") == 1)
+        {
+            Ball8Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall9") == 1)
+        {
+            Ball9Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall10") == 1)
+        {
+            Ball10Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall11") == 1)
+        {
+            Ball11Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall12") == 1)
+        {
+            Ball12Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall13") == 1)
+        {
+            Ball13Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall14") == 1)
+        {
+            Ball14Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall15") == 1)
+        {
+            Ball15Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall16") == 1)
+        {
+            Ball16Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall17") == 1)
+        {
+            Ball17Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall18") == 1)
+        {
+            Ball18Buyer.gameObject.SetActive(false);
+        }
+        if (PlayerPrefs.GetInt("haveBall19") == 1)
+        {
+            Ball19Buyer.gameObject.SetActive(false);
+        }
+
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
             AudioManager.Instance.PlaySFX("Click");
@@ -63,11 +165,41 @@ public class SkinBuy : MonoBehaviour
             Ball3Equiped.gameObject.SetActive(false);
             Ball4Equiped.gameObject.SetActive(false);
             Ball5Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             DefaultSkinEquiper.gameObject.SetActive(true);
             Ball2Equiper.gameObject.SetActive(true);
             Ball3Equiper.gameObject.SetActive(true);
             Ball4Equiper.gameObject.SetActive(true);
             Ball5Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+            
+
         }
         if (PlayerPrefs.GetInt("equipBall3") == 1)
         {
@@ -78,11 +210,39 @@ public class SkinBuy : MonoBehaviour
             Ball3Equiped.gameObject.SetActive(true);
             Ball4Equiped.gameObject.SetActive(false);
             Ball5Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             DefaultSkinEquiper.gameObject.SetActive(true);
             Ball2Equiper.gameObject.SetActive(true);
             Ball1Equiper.gameObject.SetActive(true);
             Ball4Equiper.gameObject.SetActive(true);
             Ball5Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
         }
         if (PlayerPrefs.GetInt("equipBall2") == 1)
         {
@@ -93,11 +253,39 @@ public class SkinBuy : MonoBehaviour
             Ball3Equiped.gameObject.SetActive(false);
             Ball4Equiped.gameObject.SetActive(false);
             Ball5Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             DefaultSkinEquiper.gameObject.SetActive(true);
             Ball1Equiper.gameObject.SetActive(true);
             Ball3Equiper.gameObject.SetActive(true);
             Ball4Equiper.gameObject.SetActive(true);
             Ball5Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
         }
         if (PlayerPrefs.GetInt("equipBall4") == 1)
         {
@@ -108,11 +296,39 @@ public class SkinBuy : MonoBehaviour
             Ball4Equiped.gameObject.SetActive(true);
             Ball3Equiped.gameObject.SetActive(false);
             Ball5Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             DefaultSkinEquiper.gameObject.SetActive(true);
             Ball1Equiper.gameObject.SetActive(true);
             Ball2Equiper.gameObject.SetActive(true);
             Ball3Equiper.gameObject.SetActive(true);
             Ball5Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
         }
         if (PlayerPrefs.GetInt("equipBall5") == 1)
         {
@@ -123,12 +339,643 @@ public class SkinBuy : MonoBehaviour
             Ball5Equiped.gameObject.SetActive(true);
             Ball3Equiped.gameObject.SetActive(false);
             Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             DefaultSkinEquiper.gameObject.SetActive(true);
             Ball1Equiper.gameObject.SetActive(true);
             Ball2Equiper.gameObject.SetActive(true);
             Ball3Equiper.gameObject.SetActive(true);
             Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
         }
+        if (PlayerPrefs.GetInt("equipBall6") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball6Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(true);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall7") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball7Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(true);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+           
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall8") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball8Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(true);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+           
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall9") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball9Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(true);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall10") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball10Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(true);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall11") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball11Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(true);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+           
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall12") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball12Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(true);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+           
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall13") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball13Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(true);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall14") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball14Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(true);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+           
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall15") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball15Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(true);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+           
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall16") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball16Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(true);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+          
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall17") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball17Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(true);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall18") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball18Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(true);
+            Ball19Equiped.gameObject.SetActive(false);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+          
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+        if (PlayerPrefs.GetInt("equipBall19") == 1)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball19Equiper.gameObject.SetActive(false);
+            Ball1Equiped.gameObject.SetActive(false);
+            Ball2Equiped.gameObject.SetActive(false);
+            Ball5Equiped.gameObject.SetActive(false);
+            Ball3Equiped.gameObject.SetActive(false);
+            Ball4Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(true);
+            DefaultSkinEquiper.gameObject.SetActive(true);
+            Ball1Equiper.gameObject.SetActive(true);
+            Ball2Equiper.gameObject.SetActive(true);
+            Ball3Equiper.gameObject.SetActive(true);
+            Ball4Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            
+        }
+       
+
         if (PlayerPrefs.GetInt("equipDefault") == 1)
         {
             AudioManager.Instance.PlaySFX("Click");
@@ -138,11 +985,39 @@ public class SkinBuy : MonoBehaviour
             Ball3Equiped.gameObject.SetActive(false);
             Ball4Equiped.gameObject.SetActive(false);
             Ball5Equiped.gameObject.SetActive(false);
+            Ball6Equiped.gameObject.SetActive(false);
+            Ball7Equiped.gameObject.SetActive(false);
+            Ball8Equiped.gameObject.SetActive(false);
+            Ball9Equiped.gameObject.SetActive(false);
+            Ball10Equiped.gameObject.SetActive(false);
+            Ball11Equiped.gameObject.SetActive(false);
+            Ball12Equiped.gameObject.SetActive(false);
+            Ball13Equiped.gameObject.SetActive(false);
+            Ball14Equiped.gameObject.SetActive(false);
+            Ball15Equiped.gameObject.SetActive(false);
+            Ball16Equiped.gameObject.SetActive(false);
+            Ball17Equiped.gameObject.SetActive(false);
+            Ball18Equiped.gameObject.SetActive(false);
+            Ball19Equiped.gameObject.SetActive(false);
             Ball1Equiper.gameObject.SetActive(true);
             Ball3Equiper.gameObject.SetActive(true);
             Ball2Equiper.gameObject.SetActive(true);
             Ball4Equiper.gameObject.SetActive(true);
             Ball5Equiper.gameObject.SetActive(true);
+            Ball6Equiper.gameObject.SetActive(true);
+            Ball7Equiper.gameObject.SetActive(true);
+            Ball8Equiper.gameObject.SetActive(true);
+            Ball9Equiper.gameObject.SetActive(true);
+            Ball10Equiper.gameObject.SetActive(true);
+            Ball11Equiper.gameObject.SetActive(true);
+            Ball12Equiper.gameObject.SetActive(true);
+            Ball13Equiper.gameObject.SetActive(true);
+            Ball14Equiper.gameObject.SetActive(true);
+            Ball15Equiper.gameObject.SetActive(true);
+            Ball16Equiper.gameObject.SetActive(true);
+            Ball17Equiper.gameObject.SetActive(true);
+            Ball18Equiper.gameObject.SetActive(true);
+            Ball19Equiper.gameObject.SetActive(true);
         }
 
     }
@@ -156,7 +1031,7 @@ public class SkinBuy : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball1Buyer.gameObject.SetActive(false);
-            currentCoin -= 100;
+            currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall1 = 1;
             PlayerPrefs.SetInt("haveBall1", haveBall1);
@@ -165,11 +1040,11 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball2Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 500)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball2Buyer.gameObject.SetActive(false);
-            currentCoin -= 300;
+            currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall2 = 1;
             PlayerPrefs.SetInt("haveBall2", haveBall2);
@@ -178,11 +1053,11 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball3Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1000)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball3Buyer.gameObject.SetActive(false);
-            currentCoin -= 500;
+            currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall3 = 1;
             PlayerPrefs.SetInt("haveBall3", haveBall3);
@@ -191,11 +1066,11 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball4Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 2500)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball4Buyer.gameObject.SetActive(false);
-            currentCoin -= 800;
+            currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall4 = 1;
             PlayerPrefs.SetInt("haveBall4", haveBall4);
@@ -204,52 +1079,249 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball5Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 4000)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball5Buyer.gameObject.SetActive(false);
-            currentCoin -= 1500;
+            currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall5 = 1;
             PlayerPrefs.SetInt("haveBall5", haveBall5);
             Ball5Equiper.gameObject.SetActive(true);
         }
     }
-
-
-
-
-    public void Ball3Equip()
+    public void Ball6Buy()
     {
-        AudioManager.Instance.PlaySFX("Click");
-        Ball3Equiper.gameObject.SetActive(false);
-        Ball3Equiped.gameObject.SetActive(true);
-        Ball1Equiper.gameObject.SetActive(true);
-        Ball2Equiper.gameObject.SetActive(true);
-        Ball4Equiper.gameObject.SetActive(true);
-        Ball5Equiper.gameObject.SetActive(true);
-        DefaultSkinEquiper.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("equipBall3", 1);
-        PlayerPrefs.SetInt("equipBall1", 0);
-        PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.SetInt("equipBall4", 0);
-        PlayerPrefs.SetInt("equipBall5", 0);
-        PlayerPrefs.SetInt("equipDefault", 0);
+        if (PlayerPrefs.GetInt("TotalCoins") >= 500)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball6Buyer.gameObject.SetActive(false);
+            currentCoin -= 500;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall6 = 1;
+            PlayerPrefs.SetInt("haveBall6", haveBall6);
+            Ball6Equiper.gameObject.SetActive(true);
+        }
     }
+    public void Ball7Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 500)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball7Buyer.gameObject.SetActive(false);
+            currentCoin -= 500;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall7 = 1;
+            PlayerPrefs.SetInt("haveBall7", haveBall7);
+            Ball7Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball8Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 650)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball8Buyer.gameObject.SetActive(false);
+            currentCoin -= 650;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall8= 1;
+            PlayerPrefs.SetInt("haveBall8", haveBall8);
+            Ball8Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball9Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 650)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball9Buyer.gameObject.SetActive(false);
+            currentCoin -= 650;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall9 = 1;
+            PlayerPrefs.SetInt("haveBall9", haveBall9);
+            Ball9Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball10Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 750)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball10Buyer.gameObject.SetActive(false);
+            currentCoin -= 750;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall10 = 1;
+            PlayerPrefs.SetInt("haveBall10", haveBall10);
+            Ball10Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball11Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 750)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball11Buyer.gameObject.SetActive(false);
+            currentCoin -= 750;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall11 = 1;
+            PlayerPrefs.SetInt("haveBall11", haveBall11);
+            Ball11Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball12Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1000)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball12Buyer.gameObject.SetActive(false);
+            currentCoin -= 1000;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall12 = 1;
+            PlayerPrefs.SetInt("haveBall12", haveBall12);
+            Ball12Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball13Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1000)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball13Buyer.gameObject.SetActive(false);
+            currentCoin -= 1000;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall13 = 1;
+            PlayerPrefs.SetInt("haveBall13", haveBall13);
+            Ball13Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball14Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1250)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball14Buyer.gameObject.SetActive(false);
+            currentCoin -= 1250;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall14 = 1;
+            PlayerPrefs.SetInt("haveBall14", haveBall14);
+            Ball14Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball15Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1500)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball15Buyer.gameObject.SetActive(false);
+            currentCoin -= 1500;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall15 = 1;
+            PlayerPrefs.SetInt("haveBall15", haveBall15);
+            Ball15Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball16Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1750)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball16Buyer.gameObject.SetActive(false);
+            currentCoin -= 1750;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall16 = 1;
+            PlayerPrefs.SetInt("haveBall16", haveBall16);
+            Ball16Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball17Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1750)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball17Buyer.gameObject.SetActive(false);
+            currentCoin -= 1750;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall17 = 1;
+            PlayerPrefs.SetInt("haveBall17", haveBall17);
+            Ball17Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball18Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 2500)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball18Buyer.gameObject.SetActive(false);
+            currentCoin -= 2500;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall18 = 1;
+            PlayerPrefs.SetInt("haveBall18", haveBall18);
+            Ball18Equiper.gameObject.SetActive(true);
+        }
+    }
+    public void Ball19Buy()
+    {
+        if (PlayerPrefs.GetInt("TotalCoins") >= 4000)
+        {
+            AudioManager.Instance.PlaySFX("Click");
+            Ball19Buyer.gameObject.SetActive(false);
+            currentCoin -= 4000;
+            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            haveBall19 = 1;
+            PlayerPrefs.SetInt("haveBall19", haveBall19);
+            Ball19Equiper.gameObject.SetActive(true);
+        }
+    }
+
+
+
+
+
+  
     public void Ball1Equip()
     {
         AudioManager.Instance.PlaySFX("Click");
-        Ball3Equiper.gameObject.SetActive(true);
+        
         Ball1Equiped.gameObject.SetActive(true);
+        
         Ball2Equiper.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
         Ball4Equiper.gameObject.SetActive(true);
         Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("equipBall3", 0);
-        PlayerPrefs.SetInt("equipBall1", 1);
-        PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.SetInt("equipBall4", 0);
-        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.GetInt("equipBall1", 1);
+        PlayerPrefs.GetInt("equipBall3", 0);
+        PlayerPrefs.GetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall4", 0);
+        PlayerPrefs.GetInt("equipBall5", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         Ball1Equiper.gameObject.SetActive(false);
     }
@@ -262,6 +1334,20 @@ public class SkinBuy : MonoBehaviour
         Ball2Equiper.gameObject.SetActive(false);
         Ball4Equiper.gameObject.SetActive(true);
         Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(true);
         PlayerPrefs.SetInt("equipBall3", 0);
         PlayerPrefs.SetInt("equipBall1", 0);
@@ -269,7 +1355,68 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 1);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
 
+    }
+    public void Ball3Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball3Equiper.gameObject.SetActive(false);
+        Ball3Equiped.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 1);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
     }
     public void Ball4Equip()
     {
@@ -280,6 +1427,20 @@ public class SkinBuy : MonoBehaviour
         Ball2Equiper.gameObject.SetActive(true);
         Ball5Equiper.gameObject.SetActive(true);
         Ball4Equiper.gameObject.SetActive(false);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(true);
         PlayerPrefs.SetInt("equipBall3", 0);
         PlayerPrefs.SetInt("equipBall1", 0);
@@ -287,6 +1448,21 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
 
     }
     public void Ball5Equip()
@@ -298,6 +1474,20 @@ public class SkinBuy : MonoBehaviour
         Ball2Equiper.gameObject.SetActive(true);
         Ball4Equiper.gameObject.SetActive(true);
         Ball5Equiper.gameObject.SetActive(false);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(true);
         PlayerPrefs.SetInt("equipBall3", 0);
         PlayerPrefs.SetInt("equipBall1", 0);
@@ -305,6 +1495,679 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 1);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball6Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball6Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(false);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 1);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball7Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball7Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(false);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 1);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball8Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball8Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(false);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 1);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball9Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball9Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(false);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 1);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball10Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball10Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(false);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 10);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball11Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball11Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(false);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 1);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball12Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball12Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(false);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 1);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball13Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball5Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(false);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 1);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball14Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball14Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(false);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 1);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball15Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball15Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(false);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 1);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball16Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball16Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(false);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 1);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball17Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball17Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(false);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 1);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball18Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball18Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(false);
+        Ball19Equiper.gameObject.SetActive(true);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 1);
+        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+
+    }
+    public void Ball19Equip()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+        Ball19Equiped.gameObject.SetActive(true);
+        Ball3Equiper.gameObject.SetActive(true);
+        Ball1Equiper.gameObject.SetActive(true);
+        Ball2Equiper.gameObject.SetActive(true);
+        Ball4Equiper.gameObject.SetActive(true);
+        Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(false);
+        DefaultSkinEquiper.gameObject.SetActive(true);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 1);
+        PlayerPrefs.SetInt("equipDefault", 0);
 
     }
     public void DefaultEquip()
@@ -315,13 +2178,42 @@ public class SkinBuy : MonoBehaviour
         Ball2Equiper.gameObject.SetActive(true);
         Ball4Equiper.gameObject.SetActive(true);
         Ball5Equiper.gameObject.SetActive(true);
+        Ball6Equiper.gameObject.SetActive(true);
+        Ball7Equiper.gameObject.SetActive(true);
+        Ball8Equiper.gameObject.SetActive(true);
+        Ball9Equiper.gameObject.SetActive(true);
+        Ball10Equiper.gameObject.SetActive(true);
+        Ball11Equiper.gameObject.SetActive(true);
+        Ball12Equiper.gameObject.SetActive(true);
+        Ball13Equiper.gameObject.SetActive(true);
+        Ball14Equiper.gameObject.SetActive(true);
+        Ball15Equiper.gameObject.SetActive(true);
+        Ball16Equiper.gameObject.SetActive(true);
+        Ball17Equiper.gameObject.SetActive(true);
+        Ball18Equiper.gameObject.SetActive(true);
+        Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(false);
         DefaultSkinEquiped.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("equipBall3", 0);
+        
         PlayerPrefs.SetInt("equipBall1", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.SetInt("equipBall3", 0);
         PlayerPrefs.SetInt("equipBall4", 0);
         PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.GetInt("equipBall6", 0);
+        PlayerPrefs.GetInt("equipBall7", 0);
+        PlayerPrefs.GetInt("equipBall8", 0);
+        PlayerPrefs.GetInt("equipBall9", 0);
+        PlayerPrefs.GetInt("equipBall10", 0);
+        PlayerPrefs.GetInt("equipBall11", 0);
+        PlayerPrefs.GetInt("equipBall12", 0);
+        PlayerPrefs.GetInt("equipBall13", 0);
+        PlayerPrefs.GetInt("equipBall14", 0);
+        PlayerPrefs.GetInt("equipBall15", 0);
+        PlayerPrefs.GetInt("equipBall16", 0);
+        PlayerPrefs.GetInt("equipBall17", 0);
+        PlayerPrefs.GetInt("equipBall18", 0);
+        PlayerPrefs.GetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 1);
     }
 }
