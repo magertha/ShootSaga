@@ -24,16 +24,15 @@ public class WheelManager : MonoBehaviour
         reward = false;
         isTook = false;
         StartCoroutine(CheckInternetConnection());
-
-        //Scene scene = SceneManager.GetActiveScene();
-        //spinner = GameObject.FindGameObjectWithTag("Spinner");
+        Scene scene = SceneManager.GetActiveScene();
+        spinner = GameObject.FindGameObjectWithTag("Spinner");
         //price = GameObject.FindGameObjectWithTag("Price");
         //watchAdder = GameObject.FindGameObjectWithTag("WatchAdder");
         //skip = GameObject.FindGameObjectWithTag("Skip");
         //price.GetComponent<Image>().enabled = false;
         //winT = GameObject.FindGameObjectWithTag("PriceText").GetComponent<TMP_Text>();
-        //oneTime = false;
-        //int currentGold = PlayerPrefs.GetInt("Gold", 0);
+        oneTime = false;
+        int currentGold = PlayerPrefs.GetInt("TotalCoins", 0);
         //adds = GetComponent<Adds>();
         //Keep track of the player money
         UpdateText();
@@ -42,151 +41,129 @@ public class WheelManager : MonoBehaviour
         wheel.setWheel(gameObject);
 
         //Sets the callback
-    //    if (scene.name != "SampleEndlessScene")
-    //    {
-    //        wheel.AddCallback((index) =>
-    //        {
-    //            isTook = true;
-    //            switch (index)
-    //            {
+        if (scene.name != "SampleEndlessScene")
+        {
+            wheel.AddCallback((index) =>
+            {
+                isTook = true;
+                switch (index)
+                {
 
-    //                case 1:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 1.2f);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.2x";
-    //                    break;
-    //                case 2:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 1.4f);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.4x";
-    //                    break;
-    //                case 3:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "10 Diamonds";
-    //                    diamondValue = PlayerPrefs.GetInt("Diamond");
-    //                    diamondValue += 10;
-    //                    PlayerPrefs.SetInt("Diamond", diamondValue);
-    //                    break;
-    //                case 4:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 1.6f);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.6x";
-    //                    break;
-    //                case 5:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 1.8f);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.8x";
-    //                    break;
-    //                case 6:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 2);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "2x";
-    //                    break;
-    //                case 7:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 3);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "3x";
-    //                    break;
-    //                case 8:
-    //                    LevelsCoin.totalGold = (int)(LevelsCoin.totalGold * 4);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "4x";
-    //                    break;
-    //            }
-    //            price.GetComponent<Image>().enabled = true;
-    //            skip.SetActive(false);
-    //            UpdateText();
-    //        });
-    //    }
-    //    else
-    //    {
-    //        wheel.AddCallback((index) =>
-    //        {
-    //            isTook = true;
-    //            switch (index)
-    //            {
-    //                case 1:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1.2f);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.2x";
-    //                    break;
-    //                case 2:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1.4f);
-    //                    currentGold += LevelsCoin.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.4x";
-    //                    break;
-    //                case 3:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "10 Diamonds";
-    //                    diamondValue = PlayerPrefs.GetInt("Diamond");
-    //                    diamondValue += 10;
-    //                    PlayerPrefs.SetInt("Diamond", diamondValue);
-    //                    break;
-    //                case 4:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1.6f);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.6x";
-    //                    break;
-    //                case 5:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 1.8f);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "1.8x";
-    //                    break;
-    //                case 6:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 2);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "2X";
-    //                    break;
-    //                case 7:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 3);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "3x";
-    //                    break;
-    //                case 8:
-    //                    CoinManager.totalGold = (int)(CoinManager.totalGold * 4);
-    //                    currentGold += CoinManager.totalGold;
-    //                    PlayerPrefs.SetInt("Gold", currentGold);
-    //                    PlayerPrefs.Save();
-    //                    winT.text = "4x";
-    //                    break;
-    //            }
-    //            price.GetComponent<Image>().enabled = true;
-    //            skip.SetActive(false);
-    //            UpdateText();
-    //        });
-    //    }
+                    case 1:
+                        currentGold += 20;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 20 gold";
+                        break;
+                    case 2:
+                        currentGold += 50;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 50 gold";
+                        break;
+                    case 3:
+                        currentGold += 200;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 200 gold";
+                        break;
+                    case 4:
+                        currentGold += 100;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 100 gold";
+                        break;
+                    case 5:
+                        currentGold += 200;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 200 gold";
+                        break;
+                    case 6:
+                        currentGold += 5;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 5 gold";
+                        break;
+                    case 7:
+                        currentGold += 200;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 200 gold";
+                        break;
+                    case 8:
+                        currentGold += 500;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 500 gold";
+                        break;
+                }
+                price.GetComponent<Image>().enabled = true;
+                skip.SetActive(false);
+                UpdateText();
+            });
+        }
+        else
+        {
+            wheel.AddCallback((index) =>
+            {
+                isTook = true;
+                switch (index)
+                {
+                    case 1:
+                        currentGold += 20;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 20 gold";
+                        break;
+                    case 2:
+                        currentGold += 50;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 50 gold";
+                        break;
+                    case 3:
+                        currentGold += 1000;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 1000 gold";
+                        break;
+                    case 4:
+                        currentGold += 100;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 100 gold";
+                        break;
+                    case 5:
+                        currentGold += 10;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 10 gold";
+                        break;
+                    case 6:
+                        currentGold += 5;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 5 gold";
+                        break;
+                    case 7:
+                        currentGold += 200;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 200 gold";
+                        break;
+                    case 8:
+                        currentGold += 500;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        winT.text = "win 500 gold";
+                        break;
+                }
+                price.GetComponent<Image>().enabled = true;
+                skip.SetActive(false);
+                UpdateText();
+            });
+        }
     }
     void Update()
     {

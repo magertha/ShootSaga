@@ -42,10 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5595438966314258020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a1c0a343f248f4e94499d7e3a38631, type: 3}
+  m_Script: {fileID: 11500000, guid: cc3694f8d2d5955489a7f997cd999f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  go: {fileID: 0}
 --- !u!1 &5595438966527364508
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5595438967324860341
@@ -1452,7 +1452,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &5595438967943588475
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5595438967943588474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c6986368847c941a4329016e6bb533, type: 3}
+  m_Script: {fileID: 11500000, guid: c34477676fe9d6e4ca1117757fc9dd8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   oneTime: 0
