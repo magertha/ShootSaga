@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinSystem : MonoBehaviour
 {
-    public int totalCoins = 4000; // Total amount of coins earned
+    public int totalCoins = 0; // Total amount of coins earned
     private void Update()
     {
         LoadTotalCoins(); // Load the total coins from PlayerPrefs at game start

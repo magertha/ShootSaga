@@ -5389,12 +5389,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2031491056}
   - component: {fileID: 2031491062}
-  - component: {fileID: 2031491061}
   - component: {fileID: 2031491060}
   - component: {fileID: 2031491059}
   - component: {fileID: 2031491058}
   - component: {fileID: 2031491057}
   - component: {fileID: 2031491063}
+  - component: {fileID: 2031491064}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -5503,28 +5503,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 0
---- !u!114 &2031491061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031491055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ad8ef6408700c143a224176d1a218bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  came: {fileID: 0}
-  Ball1: {fileID: 3325024333122030058, guid: b7a7813131169fa4fb2a0c23f73eb2b8, type: 3}
-  Ball2: {fileID: 3325024333122030058, guid: 69c76ed1d1fe6c540b3b892dfbb5b556, type: 3}
-  Ball3: {fileID: 3325024333122030058, guid: 4169ee82bf88c294092848ecfc6ec50e, type: 3}
-  Ball4: {fileID: 3325024333122030058, guid: e0a6be3702332c04b8a58759621e288d, type: 3}
-  Ball5: {fileID: 3325024333122030058, guid: e9d0d873dc2b95d43827ae969559558a, type: 3}
-  Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
-  x: -1.8
-  y: -2
-  z: 4
 --- !u!212 &2031491062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5592,6 +5570,42 @@ MonoBehaviour:
   Click: {fileID: 0}
   Bounce: {fileID: 0}
   Net: {fileID: 0}
+--- !u!114 &2031491064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031491055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad8ef6408700c143a224176d1a218bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  came: {fileID: 0}
+  Ball1: {fileID: 3325024333122030058, guid: 046d4babaf77fd8478fbf9fda7581212, type: 3}
+  Ball2: {fileID: 3325024333122030058, guid: 7ffcbbe5f30e8444389d801b474daf7d, type: 3}
+  Ball3: {fileID: 3325024333122030058, guid: e0248d09c0f936b4ea20d528ce89a0bd, type: 3}
+  Ball4: {fileID: 3325024333122030058, guid: 8121f6326ca5b4d44b4d66adfaa7d5ce, type: 3}
+  Ball5: {fileID: 3325024333122030058, guid: 1e15ca306c915d043b5e4ed07c7ad74b, type: 3}
+  Ball6: {fileID: 3325024333122030058, guid: 69c76ed1d1fe6c540b3b892dfbb5b556, type: 3}
+  Ball7: {fileID: 3325024333122030058, guid: 54d0e4879738817469d27e305c7c49b8, type: 3}
+  Ball8: {fileID: 3325024333122030058, guid: 0f6d421e033e05d42a4cc728e1bca9f6, type: 3}
+  Ball9: {fileID: 3325024333122030058, guid: e9d0d873dc2b95d43827ae969559558a, type: 3}
+  Ball10: {fileID: 3325024333122030058, guid: b8874ca45739618469524ddd84d24e66, type: 3}
+  Ball11: {fileID: 3325024333122030058, guid: 4169ee82bf88c294092848ecfc6ec50e, type: 3}
+  Ball12: {fileID: 3325024333122030058, guid: e64bc4d834f9d2d40bc644ad83c0a7b2, type: 3}
+  Ball13: {fileID: 3325024333122030058, guid: da59816be2956da4bb3ac5f5065d22ce, type: 3}
+  Ball14: {fileID: 3325024333122030058, guid: e0a6be3702332c04b8a58759621e288d, type: 3}
+  Ball15: {fileID: 3325024333122030058, guid: a4101a2aabfcd224988a889cc179326a, type: 3}
+  Ball16: {fileID: 3325024333122030058, guid: 75664c4a855306742be27659818f941f, type: 3}
+  Ball17: {fileID: 3325024333122030058, guid: b7a7813131169fa4fb2a0c23f73eb2b8, type: 3}
+  Ball18: {fileID: 3325024333122030058, guid: 044bd1e0efcaa8f4a99b655dd177664c, type: 3}
+  Ball19: {fileID: 3325024333122030058, guid: 9c01c45fe1a3f25448961df26a9970ee, type: 3}
+  Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
+  x: -1.8
+  y: -2
+  z: 4
 --- !u!1 &2135181809
 GameObject:
   m_ObjectHideFlags: 0

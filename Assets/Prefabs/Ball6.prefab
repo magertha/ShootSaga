@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3325024333122030034}
   - component: {fileID: 3325024333122030060}
   - component: {fileID: 3325024333122030037}
-  - component: {fileID: 697452103847891382}
+  - component: {fileID: -8199567412523507065}
   m_Layer: 0
   m_Name: Ball6
   m_TagString: Player
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 3325024333122030058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: -3.26, z: 2}
-  m_LocalScale: {x: 0.088, y: 0.088, z: 0.34066972}
+  m_LocalScale: {x: 0.084, y: 0.084, z: 0.34066972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f47458dd04246f24991c85b10e6775f5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cec2c59e38469746a6f5b73c6447716, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,9 +103,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.000001354651}
+  m_Offset: {x: 0, y: -0.008866901}
   serializedVersion: 2
-  m_Radius: 2.847188
+  m_Radius: 2.8569841
 --- !u!50 &3325024333122030062
 Rigidbody2D:
   serializedVersion: 4
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touches: 0
-  touchLimiter: 0
+  touchLimiter: 4
   ballControl: {fileID: 0}
 --- !u!114 &3325024333122030060
 MonoBehaviour:
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lr: {fileID: 0}
   maxTrajectoryHeightRatio: 0.5
---- !u!120 &697452103847891382
+--- !u!120 &-8199567412523507065
 LineRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

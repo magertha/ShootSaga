@@ -14,8 +14,7 @@ GameObject:
   - component: {fileID: 3325024333122030062}
   - component: {fileID: 3325024333122030034}
   - component: {fileID: 3325024333122030060}
-  - component: {fileID: 3325024333122030037}
-  - component: {fileID: -4575149460997700911}
+  - component: {fileID: 1016687843323176979}
   m_Layer: 0
   m_Name: Ball5
   m_TagString: Player
@@ -32,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3325024333122030058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.06, y: -3.26, z: 2}
-  m_LocalScale: {x: 0.088, y: 0.088, z: 0.34066972}
+  m_LocalScale: {x: 0.084, y: 0.084, z: 0.34066972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d514f091618298b41a89e4353022134b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 187ef51d2820f2e4c916fa05fd4caaf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.44, y: 1.43}
+  m_Size: {x: 5.76, y: 5.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -103,9 +102,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.017725607}
+  m_Offset: {x: 0, y: 0.0000014191583}
   serializedVersion: 2
-  m_Radius: 2.8826418
+  m_Radius: 2.8594265
 --- !u!50 &3325024333122030062
 Rigidbody2D:
   serializedVersion: 4
@@ -156,21 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 10
   ballPrediction: {fileID: 2635085317242212722, guid: b34f670a39e13124188cb190a45f15ca, type: 3}
---- !u!114 &3325024333122030037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3325024333122030058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6ab3a1924037f74cae8bf82f06118bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lr: {fileID: 0}
-  maxTrajectoryHeightRatio: 0.5
---- !u!120 &-4575149460997700911
+--- !u!120 &1016687843323176979
 LineRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -90,22 +90,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Lv29.unity
     guid: d99c3311f3e08494fa45d99eccc778c6
   - enabled: 1
-    path: Assets/Scenes/Lv30.unity
+    path: Assets/Scenes/Lv36.unity
     guid: 8fe40e6d71867184ab46e5ec1912a3ec
   - enabled: 1
-    path: Assets/Scenes/Lv31.unity
+    path: Assets/Scenes/Lv30.unity
     guid: 8f872c5eba9237d479dcdd99fb326e05
   - enabled: 1
-    path: Assets/Scenes/Lv32.unity
+    path: Assets/Scenes/Lv31.unity
     guid: 81c4e3019e95c4348806c93460f89349
   - enabled: 1
-    path: Assets/Scenes/Lv34.unity
+    path: Assets/Scenes/Lv33.unity
     guid: a0b83d70282d1e44f9c1f38e8b7ea47b
   - enabled: 1
-    path: Assets/Scenes/Lv35.unity
+    path: Assets/Scenes/Lv34.unity
     guid: 807a54fc4df4f3a4a8d6b5324298153b
   - enabled: 1
-    path: Assets/Scenes/Lv36.unity
+    path: Assets/Scenes/Lv35.unity
     guid: 72a2657948e311042a391a6d8434ab8d
   - enabled: 1
     path: Assets/Scenes/Lv38.unity

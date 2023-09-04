@@ -30,6 +30,7 @@ public class SkinBuy : MonoBehaviour
     public int haveBall6, haveBall7, haveBall8, haveBall9, haveBall10, equipBall6, equipBall7, equipBall8, equipBall9, equipBall10;
     public int haveBall11, haveBall12, haveBall13, haveBall14, haveBall15, equipBall11, equipBall12, equipBall13, equipBall14, equipBall15;
     public int haveBall16, haveBall17, haveBall18, haveBall19, equipBall16, equipBall17, equipBall18, equipBall19;
+    public GameObject WarningPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -158,7 +159,6 @@ public class SkinBuy : MonoBehaviour
 
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
             Ball1Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(true);
             Ball2Equiped.gameObject.SetActive(false);
@@ -203,7 +203,6 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall3") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
             Ball3Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -246,7 +245,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall2") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball2Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(true);
@@ -289,7 +288,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall4") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball4Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -332,7 +331,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall5") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball5Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -375,7 +374,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall6") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball6Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -417,7 +416,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall7") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball7Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -460,7 +459,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall8") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball8Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -503,7 +502,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall9") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball9Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -546,7 +545,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall10") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball10Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -589,7 +588,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall11") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball11Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -632,7 +631,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall12") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball12Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -675,7 +674,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall13") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball13Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -718,7 +717,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall14") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball14Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -761,7 +760,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall15") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball15Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -804,7 +803,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall16") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball16Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -847,7 +846,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall17") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball17Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -890,7 +889,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall18") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball18Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -933,7 +932,7 @@ public class SkinBuy : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("equipBall19") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball19Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -978,7 +977,7 @@ public class SkinBuy : MonoBehaviour
 
         if (PlayerPrefs.GetInt("equipDefault") == 1)
         {
-            AudioManager.Instance.PlaySFX("Click");
+            //
             Ball2Equiper.gameObject.SetActive(false);
             Ball1Equiped.gameObject.SetActive(false);
             Ball2Equiped.gameObject.SetActive(false);
@@ -1023,7 +1022,11 @@ public class SkinBuy : MonoBehaviour
     }
 
 
-
+    IEnumerator waitbefore()
+    {
+        yield return new WaitForSeconds(1.35f);
+        WarningPanel.gameObject.SetActive(false);
+    }
 
     public void Ball1Buy()
     {
@@ -1036,6 +1039,11 @@ public class SkinBuy : MonoBehaviour
             haveBall1 = 1;
             PlayerPrefs.SetInt("haveBall1", haveBall1);
             Ball1Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball2Buy()
@@ -1050,6 +1058,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall2", haveBall2);
             Ball2Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball3Buy()
     {
@@ -1062,6 +1075,11 @@ public class SkinBuy : MonoBehaviour
             haveBall3 = 1;
             PlayerPrefs.SetInt("haveBall3", haveBall3);
             Ball3Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball4Buy()
@@ -1076,6 +1094,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall4", haveBall4);
             Ball4Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball5Buy()
     {
@@ -1088,6 +1111,11 @@ public class SkinBuy : MonoBehaviour
             haveBall5 = 1;
             PlayerPrefs.SetInt("haveBall5", haveBall5);
             Ball5Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball6Buy()
@@ -1102,6 +1130,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall6", haveBall6);
             Ball6Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball7Buy()
     {
@@ -1114,6 +1147,11 @@ public class SkinBuy : MonoBehaviour
             haveBall7 = 1;
             PlayerPrefs.SetInt("haveBall7", haveBall7);
             Ball7Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball8Buy()
@@ -1128,6 +1166,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall8", haveBall8);
             Ball8Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball9Buy()
     {
@@ -1140,6 +1183,11 @@ public class SkinBuy : MonoBehaviour
             haveBall9 = 1;
             PlayerPrefs.SetInt("haveBall9", haveBall9);
             Ball9Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball10Buy()
@@ -1154,6 +1202,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall10", haveBall10);
             Ball10Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball11Buy()
     {
@@ -1167,6 +1220,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall11", haveBall11);
             Ball11Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball12Buy()
     {
@@ -1174,50 +1232,70 @@ public class SkinBuy : MonoBehaviour
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball12Buyer.gameObject.SetActive(false);
-            currentCoin -= 1000;
+            currentCoin -= 1500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall12 = 1;
             PlayerPrefs.SetInt("haveBall12", haveBall12);
             Ball12Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball13Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1000)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 1500)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball13Buyer.gameObject.SetActive(false);
-            currentCoin -= 1000;
+            currentCoin -= 2000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall13 = 1;
             PlayerPrefs.SetInt("haveBall13", haveBall13);
             Ball13Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball14Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1250)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 2000)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball14Buyer.gameObject.SetActive(false);
-            currentCoin -= 1250;
+            currentCoin -= 3000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall14 = 1;
             PlayerPrefs.SetInt("haveBall14", haveBall14);
             Ball14Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball15Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1500)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 3000)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball15Buyer.gameObject.SetActive(false);
-            currentCoin -= 1500;
+            currentCoin -= 3000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall15 = 1;
             PlayerPrefs.SetInt("haveBall15", haveBall15);
             Ball15Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball16Buy()
@@ -1232,6 +1310,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall16", haveBall16);
             Ball16Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball17Buy()
     {
@@ -1244,6 +1327,11 @@ public class SkinBuy : MonoBehaviour
             haveBall17 = 1;
             PlayerPrefs.SetInt("haveBall17", haveBall17);
             Ball17Equiper.gameObject.SetActive(true);
+        }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
         }
     }
     public void Ball18Buy()
@@ -1258,6 +1346,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall18", haveBall18);
             Ball18Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
     public void Ball19Buy()
     {
@@ -1271,6 +1364,11 @@ public class SkinBuy : MonoBehaviour
             PlayerPrefs.SetInt("haveBall19", haveBall19);
             Ball19Equiper.gameObject.SetActive(true);
         }
+        else
+        {
+            WarningPanel.gameObject.SetActive(true);
+            StartCoroutine("waitbefore");
+        }
     }
 
 
@@ -1283,7 +1381,7 @@ public class SkinBuy : MonoBehaviour
         AudioManager.Instance.PlaySFX("Click");
         
         Ball1Equiped.gameObject.SetActive(true);
-        
+        Ball1Equiper.gameObject.SetActive(false);
         Ball2Equiper.gameObject.SetActive(true);
         Ball3Equiper.gameObject.SetActive(true);
         Ball4Equiper.gameObject.SetActive(true);
@@ -1303,25 +1401,26 @@ public class SkinBuy : MonoBehaviour
         Ball18Equiper.gameObject.SetActive(true);
         Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(true);
-        PlayerPrefs.GetInt("equipBall1", 1);
-        PlayerPrefs.GetInt("equipBall3", 0);
-        PlayerPrefs.GetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall4", 0);
-        PlayerPrefs.GetInt("equipBall5", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 1);
+        PlayerPrefs.SetInt("equipBall4", 0);
+        PlayerPrefs.SetInt("equipBall5", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         Ball1Equiper.gameObject.SetActive(false);
     }
@@ -1355,20 +1454,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 1);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1398,24 +1497,24 @@ public class SkinBuy : MonoBehaviour
         DefaultSkinEquiper.gameObject.SetActive(true);
         PlayerPrefs.SetInt("equipBall3", 1);
         PlayerPrefs.SetInt("equipBall1", 0);
-        PlayerPrefs.SetInt("equipBall2", 0);
         PlayerPrefs.SetInt("equipBall4", 0);
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
     }
     public void Ball4Equip()
@@ -1448,20 +1547,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1495,20 +1594,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 1);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1542,20 +1641,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 1);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 1);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1589,20 +1688,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 1);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 1);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1636,20 +1735,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 1);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 1);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1683,20 +1782,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 1);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 1);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1730,20 +1829,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 10);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 1);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1777,20 +1876,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 1);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 1);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1824,20 +1923,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 1);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 1);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1871,20 +1970,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 1);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 1);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1918,20 +2017,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 1);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 1);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -1965,20 +2064,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 1);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 1);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -2012,20 +2111,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 1);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 1);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -2059,20 +2158,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 1);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 1);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -2106,20 +2205,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 1);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 1);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -2153,20 +2252,20 @@ public class SkinBuy : MonoBehaviour
         PlayerPrefs.SetInt("equipBall5", 0);
         PlayerPrefs.SetInt("equipDefault", 0);
         PlayerPrefs.SetInt("equipBall2", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 1);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 1);
         PlayerPrefs.SetInt("equipDefault", 0);
 
     }
@@ -2194,26 +2293,27 @@ public class SkinBuy : MonoBehaviour
         Ball19Equiper.gameObject.SetActive(true);
         DefaultSkinEquiper.gameObject.SetActive(false);
         DefaultSkinEquiped.gameObject.SetActive(true);
-        
-        PlayerPrefs.SetInt("equipBall1", 0);
-        PlayerPrefs.SetInt("equipBall2", 0);
+
         PlayerPrefs.SetInt("equipBall3", 0);
+        PlayerPrefs.SetInt("equipBall1", 0);
         PlayerPrefs.SetInt("equipBall4", 0);
         PlayerPrefs.SetInt("equipBall5", 0);
-        PlayerPrefs.GetInt("equipBall6", 0);
-        PlayerPrefs.GetInt("equipBall7", 0);
-        PlayerPrefs.GetInt("equipBall8", 0);
-        PlayerPrefs.GetInt("equipBall9", 0);
-        PlayerPrefs.GetInt("equipBall10", 0);
-        PlayerPrefs.GetInt("equipBall11", 0);
-        PlayerPrefs.GetInt("equipBall12", 0);
-        PlayerPrefs.GetInt("equipBall13", 0);
-        PlayerPrefs.GetInt("equipBall14", 0);
-        PlayerPrefs.GetInt("equipBall15", 0);
-        PlayerPrefs.GetInt("equipBall16", 0);
-        PlayerPrefs.GetInt("equipBall17", 0);
-        PlayerPrefs.GetInt("equipBall18", 0);
-        PlayerPrefs.GetInt("equipBall19", 0);
+        PlayerPrefs.SetInt("equipDefault", 0);
+        PlayerPrefs.SetInt("equipBall2", 0);
+        PlayerPrefs.SetInt("equipBall6", 0);
+        PlayerPrefs.SetInt("equipBall7", 0);
+        PlayerPrefs.SetInt("equipBall8", 0);
+        PlayerPrefs.SetInt("equipBall9", 0);
+        PlayerPrefs.SetInt("equipBall10", 0);
+        PlayerPrefs.SetInt("equipBall11", 0);
+        PlayerPrefs.SetInt("equipBall12", 0);
+        PlayerPrefs.SetInt("equipBall13", 0);
+        PlayerPrefs.SetInt("equipBall14", 0);
+        PlayerPrefs.SetInt("equipBall15", 0);
+        PlayerPrefs.SetInt("equipBall16", 0);
+        PlayerPrefs.SetInt("equipBall17", 0);
+        PlayerPrefs.SetInt("equipBall18", 0);
+        PlayerPrefs.SetInt("equipBall19", 0);
         PlayerPrefs.SetInt("equipDefault", 1);
     }
 }
