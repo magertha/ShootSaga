@@ -1084,7 +1084,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball4Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 400)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball4Buyer.gameObject.SetActive(false);
@@ -1102,7 +1102,7 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball5Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 200)
+        if (PlayerPrefs.GetInt("TotalCoins") >= 400)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball5Buyer.gameObject.SetActive(false);
