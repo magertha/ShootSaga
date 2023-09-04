@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
     {
         levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1); 
 
-        for (int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < buttons.Length-1; i++)
         {
             buttons[i].interactable = false;
         }

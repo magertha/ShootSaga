@@ -1194,7 +1194,7 @@ MonoBehaviour:
   LC: 0
   coinSystem: {fileID: 299297216}
   coinText: {fileID: 1397108481}
-  coinsEarned: 100
+  coinsEarned: 400
   outofm: {fileID: 223687168}
   over: {fileID: 1888626776}
   cleared: {fileID: 1590022145}
@@ -2905,7 +2905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lvl 19
+  m_text: Lvl 40
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -5297,7 +5297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: + 100 coins
+  m_text: + 400 coins
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -5882,8 +5882,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa5fc42b6b1e2a4ca9d6f6c495ec02e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 20
-  levelName: Lv20
+  index: 41
+  levelName: Lv41
 --- !u!114 &1683184230
 MonoBehaviour:
   m_ObjectHideFlags: 0
