@@ -42,8 +42,6 @@ public class WheelManager : MonoBehaviour
         wheel.setWheel(gameObject);
 
         //Sets the callback
-        if (scene.name != "SampleEndlessScene")
-        {
             wheel.AddCallback((index) =>
             {
                 isTook = true;
@@ -51,103 +49,58 @@ public class WheelManager : MonoBehaviour
                 {
 
                     case 1:
-                        currentGold += 20;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 2:
                         currentGold += 50;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
+                        break;
+                    case 2:
+                        currentGold += 100;
+                        PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 3:
                         currentGold += 200;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 4:
-                        currentGold += 100;
+                        currentGold += 500;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 5:
-                        currentGold += 200;
+                        currentGold += 0;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 6:
                         currentGold += 5;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 7:
-                        currentGold += 200;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 8:
-                        currentGold += 500;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                }
-                spin.SetActive(false);
-                UpdateText();
-            });
-        }
-        else
-        {
-            wheel.AddCallback((index) =>
-            {
-                isTook = true;
-                switch (index)
-                {
-                    case 1:
-                        currentGold += 20;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 2:
-                        currentGold += 50;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 3:
-                        currentGold += 1000;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 4:
-                        currentGold += 100;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 5:
                         currentGold += 10;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        break;
-                    case 6:
-                        currentGold += 5;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
-                        break;
-                    case 7:
-                        currentGold += 200;
-                        PlayerPrefs.SetInt("TotalCoins", currentGold);
-                        PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                     case 8:
-                        currentGold += 500;
+                        currentGold += 20;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
+                        Debug.Log("true");
                         break;
                 }
                 spin.SetActive(false);
                 UpdateText();
             });
         }
-    }
     void Update()
     {
 
@@ -215,6 +168,8 @@ public class WheelManager : MonoBehaviour
     public void collecter()
     {
         spinner.SetActive(false);
+        spin.SetActive(true);
+
     }
 
     //public void ok()

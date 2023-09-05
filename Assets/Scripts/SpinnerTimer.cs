@@ -7,6 +7,7 @@ using TMPro;
 public class SpinnerTimer : MonoBehaviour
 {
     public Text Time;
+    public TMP_Text timetext;
     public float msToWait;
     public Button ClickButton;
     private ulong lastTimeClicked;
@@ -23,6 +24,7 @@ public class SpinnerTimer : MonoBehaviour
 
     private void Update()
     {
+        timetext.text = Time.text;
         if (!ClickButton.IsInteractable())
         {
             if (Ready())
