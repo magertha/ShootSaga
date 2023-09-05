@@ -9,7 +9,8 @@ public class WheelManager : MonoBehaviour
 
     //Creates the wheel
     SpinWheel wheel = new SpinWheel(8);
-    GameObject watchAdder, spinner, skip, price;
+    //GameObject watchAdder, spinner, skip, price;
+    public GameObject spin,spinner;
     private int diamondValue;
     //public Text text;
     TMP_Text winT;
@@ -25,7 +26,7 @@ public class WheelManager : MonoBehaviour
         isTook = false;
         StartCoroutine(CheckInternetConnection());
         Scene scene = SceneManager.GetActiveScene();
-        spinner = GameObject.FindGameObjectWithTag("Spinner");
+        //spinner = GameObject.FindGameObjectWithTag("Spinner");
         //price = GameObject.FindGameObjectWithTag("Price");
         //watchAdder = GameObject.FindGameObjectWithTag("WatchAdder");
         //skip = GameObject.FindGameObjectWithTag("Skip");
@@ -53,53 +54,44 @@ public class WheelManager : MonoBehaviour
                         currentGold += 20;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 20 gold";
                         break;
                     case 2:
                         currentGold += 50;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 50 gold";
                         break;
                     case 3:
                         currentGold += 200;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 200 gold";
                         break;
                     case 4:
                         currentGold += 100;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 100 gold";
                         break;
                     case 5:
                         currentGold += 200;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 200 gold";
                         break;
                     case 6:
                         currentGold += 5;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 5 gold";
                         break;
                     case 7:
                         currentGold += 200;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 200 gold";
                         break;
                     case 8:
                         currentGold += 500;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 500 gold";
                         break;
                 }
-                price.GetComponent<Image>().enabled = true;
-                skip.SetActive(false);
+                spin.SetActive(false);
                 UpdateText();
             });
         }
@@ -114,53 +106,44 @@ public class WheelManager : MonoBehaviour
                         currentGold += 20;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 20 gold";
                         break;
                     case 2:
                         currentGold += 50;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 50 gold";
                         break;
                     case 3:
                         currentGold += 1000;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 1000 gold";
                         break;
                     case 4:
                         currentGold += 100;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 100 gold";
                         break;
                     case 5:
                         currentGold += 10;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 10 gold";
                         break;
                     case 6:
                         currentGold += 5;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 5 gold";
                         break;
                     case 7:
                         currentGold += 200;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 200 gold";
                         break;
                     case 8:
                         currentGold += 500;
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
                         PlayerPrefs.Save();
-                        winT.text = "win 500 gold";
                         break;
                 }
-                price.GetComponent<Image>().enabled = true;
-                skip.SetActive(false);
+                spin.SetActive(false);
                 UpdateText();
             });
         }
@@ -228,6 +211,10 @@ public class WheelManager : MonoBehaviour
         //}
 
 
+    }
+    public void collecter()
+    {
+        spinner.SetActive(false);
     }
 
     //public void ok()
