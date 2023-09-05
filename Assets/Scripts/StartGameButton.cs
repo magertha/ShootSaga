@@ -9,7 +9,6 @@ public class StartGameButton : MonoBehaviour
     private void Start()
     {
         AudioManager.Instance.MusicSource.volume = .4f;
-        AudioManager.Instance.PlayMusic("Music");
     }
 
     IEnumerator ExT()
