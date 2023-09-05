@@ -12,6 +12,11 @@ TagManager:
   - Bullet
   - Teleporter
   - Jump
+  - Price
+  - Spinner
+  - WatchAdder
+  - Skip
+  - PriceText
   layers:
   - Default
   - TransparentFX
