@@ -4,14 +4,16 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Timer : MonoBehaviour
 {
     public BallControl ballControl;
+    public CoinSystem coinSystem;
     float countdown = 90;
     public TMP_Text tex;
     public GameObject up;
-    //public ContestMain conmain;
+    public ContestMain conmain;
     //public int highScore;
 
     IEnumerator EXA()
@@ -46,6 +48,8 @@ public class Timer : MonoBehaviour
         {
             Time.timeScale = 0;
             up.SetActive(true);
+            coinSystem.AddCoins(conmain.score);
+            conmain.coinText.text = "+ " + conmain.score.ToString() + " coins";
         }
     }
 
