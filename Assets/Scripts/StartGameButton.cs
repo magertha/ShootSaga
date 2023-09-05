@@ -13,7 +13,7 @@ public class StartGameButton : MonoBehaviour
 
     IEnumerator ExT()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3.7f);
         TBCPanel.gameObject.SetActive(false);
     }
 
