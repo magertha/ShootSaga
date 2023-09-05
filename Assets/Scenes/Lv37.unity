@@ -3554,7 +3554,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 17
+  m_Mass: 28
   m_LinearDrag: 10
   m_AngularDrag: 10
   m_GravityScale: 0
@@ -3766,7 +3766,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 17
+  m_Mass: 28
   m_LinearDrag: 10
   m_AngularDrag: 10
   m_GravityScale: 0
@@ -5527,7 +5527,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 17
+  m_Mass: 28
   m_LinearDrag: 10
   m_AngularDrag: 10
   m_GravityScale: 0

@@ -4043,7 +4043,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17fb86af3ebe166499db31e368fc9aed, type: 3}
-  m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
+  m_Color: {r: 0.6627451, g: 0.6627451, b: 0.6627451, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -5378,7 +5378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnee: {fileID: 1222612194127544534, guid: 5644608ad6fe5644aabc0edb5f1497a0, type: 3}
   spawnTime: 0
-  spawnDelay: 1.63
+  spawnDelay: 1.79
 --- !u!1 &2031491055
 GameObject:
   m_ObjectHideFlags: 0
