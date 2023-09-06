@@ -210,7 +210,7 @@ public class LevelControl : MonoBehaviour
         {
             basketerFloat += Time.deltaTime;
         }
-        if (basketerFloat >= 0.2f)
+        if (basketerFloat >= 0.3f)
         {
             basketer = false;
             basketerFloat = 0;
