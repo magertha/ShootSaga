@@ -16,6 +16,22 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         Debug.Log( PlayerPrefs.GetInt("Music"));
+        if (MusicSource.mute)
+        {
+            PlayerPrefs.SetInt("Music", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Music", 0);
+        }
+        if (SFXSource.mute)
+        {
+            PlayerPrefs.SetInt("SFX", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SFX", 0);
+        }
     }
     private void Awake()
     {
@@ -34,8 +50,6 @@ public class AudioManager : MonoBehaviour
     {
         AudioManager.Instance.PlayMusic("Music");
 
-        PlayerPrefs.GetInt("Music");
-        PlayerPrefs.GetInt("SFX");
 
         if (PlayerPrefs.GetInt("Music") == 0)
         {
@@ -88,27 +102,27 @@ public class AudioManager : MonoBehaviour
     public void ToggleMusic()
     {
         MusicSource.mute = !MusicSource.mute;
-        if (MusicSource.mute)
-        {
-            PlayerPrefs.SetInt("Music", 1);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("Music", 0);
-        }
+        //if (MusicSource.mute)
+        //{
+        //    PlayerPrefs.SetInt("Music", 1);
+        //}
+        //else
+        //{
+        //    PlayerPrefs.SetInt("Music", 0);
+        //}
     }
 
     public void ToggleSFX()
     {
         SFXSource.mute = !SFXSource.mute;
 
-        if (SFXSource.mute)
-        {
-            PlayerPrefs.SetInt("SFX", 1);
-        }
-        else
-        {
-            PlayerPrefs.SetInt("SFX", 0);
-        }
+        //if (SFXSource.mute)
+        //{
+        //    PlayerPrefs.SetInt("SFX", 1);
+        //}
+        //else
+        //{
+        //    PlayerPrefs.SetInt("SFX", 0);
+        //}
     }
 }
