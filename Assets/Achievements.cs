@@ -10,6 +10,30 @@ public class Achievements : MonoBehaviour
     public Button[] buttons;
     public Image[] locks;
     public TMP_Text[] texts;
+    public Button ach;
+
+    private void Awake()
+    {
+        Highlight();
+    }
+    private void Highlight()
+    {
+        StartCoroutine(AnimateWithDelay(.2f));
+    }
+
+    private IEnumerator AnimateWithDelay(float delayInSeconds)
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+        if (PlayerPrefs.GetInt("achieved") == 1)
+        {
+            ach.animator.SetBool("Highlighted", true);
+        }
+        else
+        {
+            ach.animator.SetBool("Highlighted", false);
+        }
+
+    }
     private void Start()
     {
         PlayerPrefs.GetInt("Coin100", 0);
@@ -29,18 +53,22 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.GetInt("Diammond3d", 0);
         PlayerPrefs.GetInt("Diammond5d", 0);
 
+        PlayerPrefs.GetInt("achieved", 0);
+
         //kazanýnca buton büyüyüp küçülsün:
         if (PlayerPrefs.GetFloat("high") >= 5 && PlayerPrefs.GetInt("Coin100") == 0)
         {
 
             buttons[0].animator.SetBool("Highlighted", true);
             texts[0].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetFloat("high") >= 10 && PlayerPrefs.GetInt("Diammond2a") == 0)
         {
             buttons[1].animator.SetBool("Highlighted", true);
             texts[1].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
 
@@ -48,48 +76,56 @@ public class Achievements : MonoBehaviour
         {
             buttons[2].animator.SetBool("Highlighted", true);
             texts[2].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetFloat("high") >= 40 && PlayerPrefs.GetInt("Diammond5a") == 0)
         {
             buttons[3].animator.SetBool("Highlighted", true);
             texts[3].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 3 && PlayerPrefs.GetInt("Diammond7") == 0)
         {
             buttons[4].animator.SetBool("Highlighted", true);
             texts[4].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 5 && PlayerPrefs.GetInt("Diammond10") == 0)
         {
             buttons[5].animator.SetBool("Highlighted", true);
             texts[5].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 10 && PlayerPrefs.GetInt("Coin300") == 0)
         {
             buttons[6].animator.SetBool("Highlighted", true);
             texts[6].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 20 && PlayerPrefs.GetInt("Diammond2b") == 0)
         {
             buttons[7].animator.SetBool("Highlighted", true);
             texts[7].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 30 && PlayerPrefs.GetInt("Diammond3b") == 0)
         {
             buttons[8].animator.SetBool("Highlighted", true);
             texts[8].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
 
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 40 && PlayerPrefs.GetInt("Diammond5b") == 0)
         {
             buttons[9].animator.SetBool("Highlighted", true);
             texts[9].color = new Color32(0, 149, 24, 255);
+            PlayerPrefs.SetInt("achieved", 1);
         }
     }
 
@@ -150,6 +186,7 @@ public class Achievements : MonoBehaviour
         if (PlayerPrefs.GetInt("levelsUnlocked") - 1 >= 3 && PlayerPrefs.GetInt("Diammond7") == 0)
         {
             buttons[4].interactable = true;
+            //PlayerPrefs.SetInt("achieved", 1);
         }
         else
         {
@@ -219,8 +256,9 @@ public class Achievements : MonoBehaviour
         {
             locks[9].enabled = false;
         }
+        Debug.Log(Time.timeScale);
     }
-
+    
     public void Diamond1a()
     {
         diamondValue = PlayerPrefs.GetInt("Diamond");
@@ -229,6 +267,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond1a", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond1b()
     {
@@ -238,6 +277,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond1b", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond2a()
     {
@@ -247,6 +287,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond2a", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond2b()
     {
@@ -256,6 +297,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond2b", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond3a()
     {
@@ -265,6 +307,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond3a", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond3b()
     {
@@ -274,6 +317,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond3b", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond3c()
     {
@@ -283,6 +327,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond3c", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond3d()
     {
@@ -292,6 +337,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond3d", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond5a()
     {
@@ -301,6 +347,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond5a", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond5b()
     {
@@ -310,6 +357,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond5b", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond5c()
     {
@@ -319,6 +367,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond5c", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond5d()
     {
@@ -328,6 +377,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond5d", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond7()
     {
@@ -337,6 +387,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond7", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Diamond10()
     {
@@ -346,6 +397,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Diammond10", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Coin100()
     {
@@ -355,6 +407,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Coin100", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
     public void Coin300()
     {
@@ -364,6 +417,7 @@ public class Achievements : MonoBehaviour
         PlayerPrefs.SetInt("Coin300", 1);
         PlayerPrefs.Save();
         AudioManager.Instance.PlaySFX("Click");
+        PlayerPrefs.SetInt("achieved", 0);
     }
 
 

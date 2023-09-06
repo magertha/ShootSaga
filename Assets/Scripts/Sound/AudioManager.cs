@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log( PlayerPrefs.GetInt("Music"));
+        //Debug.Log( PlayerPrefs.GetInt("Music"));
     }
     private void Awake()
     {
