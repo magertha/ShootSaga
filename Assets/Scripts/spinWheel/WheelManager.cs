@@ -19,9 +19,11 @@ public class WheelManager : MonoBehaviour
     Adds adds;
     public static bool isTook, reward, rewardAns;
     public bool test;
+    private int gemOrGold;
 
     void Start()
     {
+        gemOrGold = Random.Range(0, 2);
         reward = false;
         isTook = false;
         StartCoroutine(CheckInternetConnection());
@@ -34,6 +36,7 @@ public class WheelManager : MonoBehaviour
         //winT = GameObject.FindGameObjectWithTag("PriceText").GetComponent<TMP_Text>();
         oneTime = false;
         int currentGold = PlayerPrefs.GetInt("TotalCoins", 0);
+        int currentGem = PlayerPrefs.GetInt("Diamonds", 0);
         //adds = GetComponent<Adds>();
         //Keep track of the player money
         UpdateText();
@@ -73,8 +76,16 @@ public class WheelManager : MonoBehaviour
                         Debug.Log("true");
                         break;
                     case 5:
-                        currentGold += 0;
+                        if (gemOrGold == 1)
+                        {
+                            currentGold += Random.Range(500, 1001);
+                        }
+                        else
+                        {
+                            currentGem += Random.Range(2, 6);
+                        }
                         PlayerPrefs.SetInt("TotalCoins", currentGold);
+                        PlayerPrefs.SetInt("Diamonds", currentGem);
                         PlayerPrefs.Save();
                         Debug.Log("true");
                         break;
