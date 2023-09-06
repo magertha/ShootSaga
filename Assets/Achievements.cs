@@ -256,7 +256,6 @@ public class Achievements : MonoBehaviour
         {
             locks[9].enabled = false;
         }
-        Debug.Log(Time.timeScale);
     }
     
     public void Diamond1a()

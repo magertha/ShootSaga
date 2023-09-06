@@ -15,7 +15,7 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log( PlayerPrefs.GetInt("Music"));
+        Debug.Log( PlayerPrefs.GetInt("Music"));
     }
     private void Awake()
     {
@@ -33,27 +33,27 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         AudioManager.Instance.PlayMusic("Music");
-        
-        //PlayerPrefs.GetInt("Music");
-        //PlayerPrefs.GetInt("SFX");
 
-        //if (PlayerPrefs.GetInt("Music") == 0)
-        //{
-        //    MusicSource.mute = false;
-        //}
-        //else
-        //{
-        //    MusicSource.mute = true;
-        //}
+        PlayerPrefs.GetInt("Music");
+        PlayerPrefs.GetInt("SFX");
 
-        //if (PlayerPrefs.GetInt("SFX") == 0)
-        //{
-        //    SFXSource.mute = false;
-        //}
-        //else
-        //{
-        //    SFXSource.mute = true;
-        //}
+        if (PlayerPrefs.GetInt("Music") == 0)
+        {
+            MusicSource.mute = false;
+        }
+        else
+        {
+            MusicSource.mute = true;
+        }
+
+        if (PlayerPrefs.GetInt("SFX") == 0)
+        {
+            SFXSource.mute = false;
+        }
+        else
+        {
+            SFXSource.mute = true;
+        }
     }
     
     public void PlayMusic(string name)
@@ -88,27 +88,27 @@ public class AudioManager : MonoBehaviour
     public void ToggleMusic()
     {
         MusicSource.mute = !MusicSource.mute;
-        //if (MusicSource.mute)
-        //{
-        //    PlayerPrefs.SetInt("Music", 1);
-        //}
-        //else
-        //{
-        //    PlayerPrefs.SetInt("Music", 0);
-        //}
+        if (MusicSource.mute)
+        {
+            PlayerPrefs.SetInt("Music", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Music", 0);
+        }
     }
 
     public void ToggleSFX()
     {
         SFXSource.mute = !SFXSource.mute;
 
-        //if (SFXSource.mute)
-        //{
-        //    PlayerPrefs.SetInt("SFX", 1);
-        //}
-        //else
-        //{
-        //    PlayerPrefs.SetInt("SFX", 0);
-        //}
+        if (SFXSource.mute)
+        {
+            PlayerPrefs.SetInt("SFX", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SFX", 0);
+        }
     }
 }
