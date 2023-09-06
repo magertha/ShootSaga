@@ -1584,7 +1584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 373305805}
   m_Layer: 5
-  m_Name: Price12
+  m_Name: Price19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2934,6 +2934,26 @@ MonoBehaviour:
   - {fileID: 2830366316687961430}
   - {fileID: 2830366315628046350}
   - {fileID: 2830366317236343052}
+  priceIcon:
+  - {fileID: 1433162567}
+  - {fileID: 1896569672}
+  - {fileID: 12477394}
+  - {fileID: 1255551536}
+  - {fileID: 2102514199}
+  - {fileID: 1658930803}
+  - {fileID: 954548401}
+  - {fileID: 457154846}
+  - {fileID: 241259688}
+  - {fileID: 1170756777}
+  - {fileID: 996078908}
+  - {fileID: 1618891149}
+  - {fileID: 16907587}
+  - {fileID: 1563286630}
+  - {fileID: 2144467022}
+  - {fileID: 1740922971}
+  - {fileID: 1685696399}
+  - {fileID: 1452228126}
+  - {fileID: 373305804}
   Ball1Buyer: {fileID: 1536604518}
   Ball1Equiper: {fileID: 219223094}
   Ball1Equiped: {fileID: 489534730}
@@ -5203,7 +5223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452228127}
   m_Layer: 5
-  m_Name: Price12
+  m_Name: Price18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5834,7 +5854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685696400}
   m_Layer: 5
-  m_Name: Price12
+  m_Name: Price17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
