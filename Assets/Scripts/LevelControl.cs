@@ -10,6 +10,9 @@ public class LevelControl : MonoBehaviour
 
     GameObject bal; //your other object 
     public GameObject came;
+    Animator animator;
+    public bool basketer;
+    public float basketerFloat;
     //public GameObject bullet;
     //public GameObject lava;
     //public GameObject lava2;
@@ -24,7 +27,8 @@ public class LevelControl : MonoBehaviour
     public void Start()
     {
         Time.timeScale=1;
-
+        basketer = false;
+        basketerFloat = 0;
         //Ball1 = GameObject.FindGameObjectWithTag("Ball1");
         //Ball2 = GameObject.FindGameObjectWithTag("Ball2");
         //Ball3 = GameObject.FindGameObjectWithTag("Ball3");
@@ -47,7 +51,7 @@ public class LevelControl : MonoBehaviour
         //Default = GameObject.FindGameObjectWithTag("BallDefault");
 
         adds = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Adds>();
-
+        animator = gameObject.GetComponent<Animator>();
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
             Instantiate(Ball1, new Vector3(x, y, z), Quaternion.identity);
@@ -178,6 +182,8 @@ public class LevelControl : MonoBehaviour
         {
             Rigidbody2D ballRigidbody = bal.GetComponent<Rigidbody2D>();
             AudioManager.Instance.PlaySFX("Net");
+            animator.SetBool("basket", true);
+            basketer = true;
             // Check if the ball is moving from up to down
             if (ballRigidbody.velocity.y < 0.1f)
             {
@@ -196,6 +202,19 @@ public class LevelControl : MonoBehaviour
 
                 Pass();
             }
+        }
+    }
+    private void Update()
+    {
+        if (basketer == true)
+        {
+            basketerFloat += Time.deltaTime;
+        }
+        if (basketerFloat >= 0.3f)
+        {
+            basketer = false;
+            basketerFloat = 0;
+            animator.SetBool("basket", false);
         }
     }
 }

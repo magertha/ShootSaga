@@ -544,7 +544,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.55
+  m_fontSize: 72
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2373,6 +2373,7 @@ GameObject:
   - component: {fileID: 709449447}
   - component: {fileID: 709449446}
   - component: {fileID: 709449452}
+  - component: {fileID: 709449453}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -2494,11 +2495,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   came: {fileID: 0}
+  basketer: 0
+  basketerFloat: 0
   Ball1: {fileID: 3325024333122030058, guid: b7a7813131169fa4fb2a0c23f73eb2b8, type: 3}
   Ball2: {fileID: 3325024333122030058, guid: 69c76ed1d1fe6c540b3b892dfbb5b556, type: 3}
   Ball3: {fileID: 3325024333122030058, guid: 4169ee82bf88c294092848ecfc6ec50e, type: 3}
   Ball4: {fileID: 3325024333122030058, guid: e0a6be3702332c04b8a58759621e288d, type: 3}
   Ball5: {fileID: 3325024333122030058, guid: e9d0d873dc2b95d43827ae969559558a, type: 3}
+  Ball6: {fileID: 0}
+  Ball7: {fileID: 0}
+  Ball8: {fileID: 0}
+  Ball9: {fileID: 0}
+  Ball10: {fileID: 0}
+  Ball11: {fileID: 0}
+  Ball12: {fileID: 0}
+  Ball13: {fileID: 0}
+  Ball14: {fileID: 0}
+  Ball15: {fileID: 0}
+  Ball16: {fileID: 0}
+  Ball17: {fileID: 0}
+  Ball18: {fileID: 0}
+  Ball19: {fileID: 0}
   Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
   x: 2.2
   y: 0.8
@@ -2570,6 +2587,27 @@ MonoBehaviour:
   Click: {fileID: 0}
   Bounce: {fileID: 0}
   Net: {fileID: 0}
+--- !u!95 &709449453
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709449444}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &752174100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,7 +2805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.045, y: 0.9065536}
   m_AnchorMax: {x: 0.3511691, y: 0.9685357}
-  m_AnchoredPosition: {x: -0.04336548, y: -2.0002441}
+  m_AnchoredPosition: {x: -0.04333496, y: -2.0002441}
   m_SizeDelta: {x: -8.007568, y: -7.6988983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910650774
@@ -3862,7 +3900,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.0928564
+  orthographic size: 6.092438
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4053,7 +4091,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.171, y: 0.26751038}
   m_AnchorMax: {x: 0.8385166, y: 0.7015104}
-  m_AnchoredPosition: {x: -3.9850998, y: 0.2642994}
+  m_AnchoredPosition: {x: -3.9850998, y: 0.2642975}
   m_SizeDelta: {x: 7.9698, y: 19.1184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1679241259
@@ -4103,7 +4141,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.9
+  m_fontSize: 61.5
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4496,7 +4534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823569589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
+  m_LocalPosition: {x: 0, y: 6.312438, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5147,7 +5185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911783698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -5.3928566, z: 6}
+  m_LocalPosition: {x: -0.04, y: -5.3924384, z: 6}
   m_LocalScale: {x: 0.476259, y: 0.44904673, z: 0.44904673}
   m_ConstrainProportionsScale: 0
   m_Children:

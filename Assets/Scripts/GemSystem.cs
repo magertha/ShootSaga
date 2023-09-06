@@ -24,16 +24,16 @@ public class GemSystem : MonoBehaviour
     // Save the total Gems to PlayerPrefs
     private void SaveTotalGems()
     {
-        PlayerPrefs.SetInt("TotalGems", totalGems);
+        PlayerPrefs.SetInt("Diamond", totalGems);
         PlayerPrefs.Save();
     }
 
     // Load the total Gems from PlayerPrefs
     private void LoadTotalGems()
     {
-        if (PlayerPrefs.HasKey("TotalGems"))
+        if (PlayerPrefs.HasKey("Diamond"))
         {
-            totalGems = PlayerPrefs.GetInt("TotalGems");
+            totalGems = PlayerPrefs.GetInt("Diamond");
         }
     }
 }

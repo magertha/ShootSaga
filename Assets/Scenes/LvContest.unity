@@ -1175,7 +1175,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.02941546, y: 0}
   m_AnchorMax: {x: 0.35254592, y: 0.968442}
-  m_AnchoredPosition: {x: 0.49978638, y: -0.11804199}
+  m_AnchoredPosition: {x: 0.4998169, y: -0.11804199}
   m_SizeDelta: {x: -3.7495003, y: -4.3882523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723668620
@@ -1428,7 +1428,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.0928564
+  orthographic size: 6.092438
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1841,7 +1841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897537606}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -5.6928563, z: 5}
+  m_LocalPosition: {x: -0.91, y: -5.692438, z: 5}
   m_LocalScale: {x: 0.1380091, y: 0.12980542, z: 0.1298054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2165,6 +2165,7 @@ GameObject:
   - component: {fileID: 1233092437}
   - component: {fileID: 1233092436}
   - component: {fileID: 1233092440}
+  - component: {fileID: 1233092441}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -2329,6 +2330,27 @@ MonoBehaviour:
   came: {fileID: 856381287}
   scoreCounter: {fileID: 1696894719}
   conmain: {fileID: 856381294}
+--- !u!95 &1233092441
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233092433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1252278939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2476,7 @@ GameObject:
   - component: {fileID: 1262458546}
   - component: {fileID: 1262458545}
   - component: {fileID: 1262458544}
+  - component: {fileID: 1262458549}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -2618,6 +2641,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1262458549
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262458542}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1271284610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3523,6 +3567,7 @@ GameObject:
   - component: {fileID: 1391444340}
   - component: {fileID: 1391444339}
   - component: {fileID: 1391444343}
+  - component: {fileID: 1391444344}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -3687,6 +3732,27 @@ MonoBehaviour:
   came: {fileID: 856381287}
   scoreCounter: {fileID: 1696894719}
   conmain: {fileID: 856381294}
+--- !u!95 &1391444344
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391444336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1445513969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3701,6 +3767,7 @@ GameObject:
   - component: {fileID: 1445513973}
   - component: {fileID: 1445513972}
   - component: {fileID: 1445513976}
+  - component: {fileID: 1445513977}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -3865,6 +3932,27 @@ MonoBehaviour:
   came: {fileID: 856381287}
   scoreCounter: {fileID: 1696894719}
   conmain: {fileID: 856381294}
+--- !u!95 &1445513977
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445513969}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1473124551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4978,6 +5066,7 @@ GameObject:
   - component: {fileID: 1815902868}
   - component: {fileID: 1815902867}
   - component: {fileID: 1815902866}
+  - component: {fileID: 1815902871}
   m_Layer: 0
   m_Name: Net
   m_TagString: Untagged
@@ -5142,6 +5231,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1815902871
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815902864}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06d60bf1406890145a505481f6d25484, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1950572903
 GameObject:
   m_ObjectHideFlags: 0
@@ -5542,7 +5652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117124843}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
+  m_LocalPosition: {x: 0, y: 6.312438, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

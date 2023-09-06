@@ -10,6 +10,6 @@ public class ShopGemDisplay : MonoBehaviour
 
     void Update()
     {
-        totalGemText.text = PlayerPrefs.GetInt("TotalGems").ToString();
+        totalGemText.text = PlayerPrefs.GetInt("Diamond").ToString();
     }
 }
