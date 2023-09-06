@@ -10,6 +10,6 @@ public class GemDisplay : MonoBehaviour
 
     void Update()
     {
-        totalGemText.text = PlayerPrefs.GetInt("TotalGems").ToString() + " gems";
+        totalGemText.text = PlayerPrefs.GetInt("Diamond").ToString() + " gems";
     }
 }

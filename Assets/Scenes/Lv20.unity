@@ -1237,8 +1237,8 @@ MonoBehaviour:
   Ball18: {fileID: 3325024333122030058, guid: 044bd1e0efcaa8f4a99b655dd177664c, type: 3}
   Ball19: {fileID: 3325024333122030058, guid: 9c01c45fe1a3f25448961df26a9970ee, type: 3}
   Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
-  x: -2
-  y: -3.7
+  x: 2.2
+  y: -2
   z: 4
 --- !u!1 &531710405
 GameObject:

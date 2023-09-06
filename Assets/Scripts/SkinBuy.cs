@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SkinBuy : MonoBehaviour
 {
-    private int currentCoin;
+    private int currentCoin, currentGem;
     public Button Ball1Buyer,Ball1Equiper,Ball1Equiped;
     public Button Ball2Buyer,Ball2Equiper,Ball2Equiped;
     public Button Ball3Buyer,Ball3Equiper,Ball3Equiped;
@@ -35,6 +35,7 @@ public class SkinBuy : MonoBehaviour
     void Start()
     {
         currentCoin = PlayerPrefs.GetInt("TotalCoins", 0);
+        currentGem = PlayerPrefs.GetInt("Diamond", 0);
         PlayerPrefs.GetInt("haveBall1", 0);
         PlayerPrefs.GetInt("haveBall3", 0);
         PlayerPrefs.GetInt("haveBall2", 0);
@@ -80,6 +81,7 @@ public class SkinBuy : MonoBehaviour
     void Update()
     {
         currentCoin = PlayerPrefs.GetInt("TotalCoins");
+        currentGem = PlayerPrefs.GetInt("Diamond");
         if (PlayerPrefs.GetInt("haveBall1") == 1)
         {
             Ball1Buyer.gameObject.SetActive(false);
@@ -1300,12 +1302,12 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball16Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1750)
+        if (PlayerPrefs.GetInt("Diamond") >= 5)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball16Buyer.gameObject.SetActive(false);
-            currentCoin -= 1750;
-            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            currentGem -= 5;
+            PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall16 = 1;
             PlayerPrefs.SetInt("haveBall16", haveBall16);
             Ball16Equiper.gameObject.SetActive(true);
@@ -1318,12 +1320,12 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball17Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 1750)
+        if (PlayerPrefs.GetInt("Diamond") >= 5)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball17Buyer.gameObject.SetActive(false);
-            currentCoin -= 1750;
-            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            currentGem -= 5;
+            PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall17 = 1;
             PlayerPrefs.SetInt("haveBall17", haveBall17);
             Ball17Equiper.gameObject.SetActive(true);
@@ -1336,12 +1338,12 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball18Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 2500)
+        if (PlayerPrefs.GetInt("Diamond") >= 10)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball18Buyer.gameObject.SetActive(false);
-            currentCoin -= 2500;
-            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            currentGem -= 10;
+            PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall18 = 1;
             PlayerPrefs.SetInt("haveBall18", haveBall18);
             Ball18Equiper.gameObject.SetActive(true);
@@ -1354,12 +1356,12 @@ public class SkinBuy : MonoBehaviour
     }
     public void Ball19Buy()
     {
-        if (PlayerPrefs.GetInt("TotalCoins") >= 4000)
+        if (PlayerPrefs.GetInt("Diamond") >= 10)
         {
             AudioManager.Instance.PlaySFX("Click");
             Ball19Buyer.gameObject.SetActive(false);
-            currentCoin -= 4000;
-            PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            currentGem -= 10;
+            PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall19 = 1;
             PlayerPrefs.SetInt("haveBall19", haveBall19);
             Ball19Equiper.gameObject.SetActive(true);
