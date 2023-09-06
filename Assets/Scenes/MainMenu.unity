@@ -4433,7 +4433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.04626546, y: 0}
   m_AnchorMax: {x: 0.94342184, y: 1}
-  m_AnchoredPosition: {x: 4, y: -487.5405}
+  m_AnchoredPosition: {x: 4, y: -487.54053}
   m_SizeDelta: {x: 80, y: 975.0837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409381410
@@ -9389,8 +9389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: {fileID: 1142316978}
-  timetext: {fileID: 0}
-  msToWait: 60000
+  timetext: {fileID: 260370192}
+  msToWait: 84600000
   ClickButton: {fileID: 667691077}
   spinner: {fileID: 5595438968086689522}
 --- !u!1 &988553937
