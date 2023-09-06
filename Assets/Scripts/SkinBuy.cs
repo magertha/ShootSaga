@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class SkinBuy : MonoBehaviour
 {
     private int currentCoin, currentGem;
+    public Image[] Stand;
+    public Image[] Ball;
+    public GameObject[] priceIcon ;
     public Button Ball1Buyer,Ball1Equiper,Ball1Equiped;
     public Button Ball2Buyer,Ball2Equiper,Ball2Equiped;
     public Button Ball3Buyer,Ball3Equiper,Ball3Equiped;
@@ -85,78 +88,135 @@ public class SkinBuy : MonoBehaviour
         if (PlayerPrefs.GetInt("haveBall1") == 1)
         {
             Ball1Buyer.gameObject.SetActive(false);
+            Ball[0].color = new Color32(255, 255, 255, 255);
+            Stand[0].color = new Color(255, 255, 255, 255);
+            priceIcon[0].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall3") == 1)
         {
             Ball3Buyer.gameObject.SetActive(false);
+            Ball[2].color = new Color32(255, 255, 255, 255);
+            Stand[2].color = new Color(255, 255, 255, 255);
+            priceIcon[2].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall2") == 1)
         {
             Ball2Buyer.gameObject.SetActive(false);
+            Ball[1].color = new Color32(255, 255, 255, 255);
+            Stand[1].color = new Color(255, 255, 255, 255);
+            priceIcon[1].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall4") == 1)
         {
             Ball4Buyer.gameObject.SetActive(false);
+            Ball[3].color = new Color32(255, 255, 255, 255);
+            Stand[3].color = new Color(255, 255, 255, 255);
+            priceIcon[3].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall5") == 1)
         {
             Ball5Buyer.gameObject.SetActive(false);
+            Ball[4].color = new Color32(255, 255, 255, 255);
+            Stand[4].color = new Color(255, 255, 255, 255);
+            priceIcon[4].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall6") == 1)
         {
             Ball6Buyer.gameObject.SetActive(false);
+            Ball[6].color = new Color32(255, 255, 255, 255);
+            Stand[6].color = new Color(255, 255, 255, 255);
+            priceIcon[5].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall7") == 1)
         {
             Ball7Buyer.gameObject.SetActive(false);
+            Ball[7].color = new Color32(255, 255, 255, 255);
+            Stand[7].color = new Color(255, 255, 255, 255);
+            priceIcon[6].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall8") == 1)
         {
             Ball8Buyer.gameObject.SetActive(false);
+            Ball[8].color = new Color32(255, 255, 255, 255);
+            Stand[8].color = new Color(255, 255, 255, 255);
+            priceIcon[7].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall9") == 1)
         {
             Ball9Buyer.gameObject.SetActive(false);
+            Ball[8].color = new Color32(255, 255, 255, 255);
+            Stand[8].color = new Color(255, 255, 255, 255);
+            priceIcon[8].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall10") == 1)
         {
             Ball10Buyer.gameObject.SetActive(false);
+            Ball[9].color = new Color32(255, 255, 255, 255);
+            Stand[9].color = new Color(255, 255, 255, 255);
+            priceIcon[9].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall11") == 1)
         {
             Ball11Buyer.gameObject.SetActive(false);
+            Ball[10].color = new Color32(255, 255, 255, 255);
+            Stand[10].color = new Color(255, 255, 255, 255);
+            priceIcon[10].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall12") == 1)
         {
             Ball12Buyer.gameObject.SetActive(false);
+            Ball[11].color = new Color32(255, 255, 255, 255);
+            Stand[11].color = new Color(255, 255, 255, 255);
+            priceIcon[11].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall13") == 1)
         {
             Ball13Buyer.gameObject.SetActive(false);
+            Ball[12].color = new Color32(255, 255, 255, 255);
+            Stand[12].color = new Color(255, 255, 255, 255);
+            priceIcon[12].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall14") == 1)
         {
             Ball14Buyer.gameObject.SetActive(false);
+            Ball[13].color = new Color32(255, 255, 255, 255);
+            Stand[13].color = new Color(255, 255, 255, 255);
+            priceIcon[13].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall15") == 1)
         {
             Ball15Buyer.gameObject.SetActive(false);
+            Ball[14].color = new Color32(255, 255, 255, 255);
+            Stand[14].color = new Color(255, 255, 255, 255);
+            priceIcon[14].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall16") == 1)
         {
             Ball16Buyer.gameObject.SetActive(false);
+            Ball[15].color = new Color32(255, 255, 255, 255);
+            Stand[15].color = new Color(255, 255, 255, 255);
+            priceIcon[15].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall17") == 1)
         {
             Ball17Buyer.gameObject.SetActive(false);
+            Ball[16].color = new Color32(255, 255, 255, 255);
+            Stand[16].color = new Color(255, 255, 255, 255);
+            priceIcon[16].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall18") == 1)
         {
             Ball18Buyer.gameObject.SetActive(false);
+            Ball[17].color = new Color32(255, 255, 255, 255);
+            Stand[17].color = new Color(255, 255, 255, 255);
+            priceIcon[17].SetActive(false);
         }
         if (PlayerPrefs.GetInt("haveBall19") == 1)
         {
             Ball19Buyer.gameObject.SetActive(false);
+            Ball[18].color = new Color32(255, 255, 255, 255);
+            Stand[18].color = new Color(255, 255, 255, 255);
+            priceIcon[18].SetActive(false);
         }
 
         if (PlayerPrefs.GetInt("equipBall1") == 1)
@@ -1039,6 +1099,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall1 = 1;
+            Ball[0].color = new Color32(255, 255, 255, 255);
+            Stand[0].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall1", haveBall1);
             Ball1Equiper.gameObject.SetActive(true);
         }
@@ -1057,6 +1119,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall2 = 1;
+            Ball[1].color = new Color32(255, 255, 255, 255);
+            Stand[1].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall2", haveBall2);
             Ball2Equiper.gameObject.SetActive(true);
         }
@@ -1075,6 +1139,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall3 = 1;
+            Ball[2].color = new Color32(255, 255, 255, 255);
+            Stand[2].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall3", haveBall3);
             Ball3Equiper.gameObject.SetActive(true);
         }
@@ -1093,6 +1159,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall4 = 1;
+            Ball[3].color = new Color32(255, 255, 255, 255);
+            Stand[3].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall4", haveBall4);
             Ball4Equiper.gameObject.SetActive(true);
         }
@@ -1111,6 +1179,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 200;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall5 = 1;
+            Ball[4].color = new Color32(255, 255, 255, 255);
+            Stand[4].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall5", haveBall5);
             Ball5Equiper.gameObject.SetActive(true);
         }
@@ -1129,6 +1199,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall6 = 1;
+            Ball[5].color = new Color32(255, 255, 255, 255);
+            Stand[5].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall6", haveBall6);
             Ball6Equiper.gameObject.SetActive(true);
         }
@@ -1146,6 +1218,8 @@ public class SkinBuy : MonoBehaviour
             Ball7Buyer.gameObject.SetActive(false);
             currentCoin -= 500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
+            Ball[6].color = new Color32(255, 255, 255, 255);
+            Stand[6].color = new Color(255, 255, 255, 255);
             haveBall7 = 1;
             PlayerPrefs.SetInt("haveBall7", haveBall7);
             Ball7Equiper.gameObject.SetActive(true);
@@ -1165,6 +1239,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 650;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall8= 1;
+            Ball[7].color = new Color32(255, 255, 255, 255);
+            Stand[7].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall8", haveBall8);
             Ball8Equiper.gameObject.SetActive(true);
         }
@@ -1183,6 +1259,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 650;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall9 = 1;
+            Ball[8].color = new Color32(255, 255, 255, 255);
+            Stand[8].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall9", haveBall9);
             Ball9Equiper.gameObject.SetActive(true);
         }
@@ -1201,6 +1279,9 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 750;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall10 = 1;
+            Ball[9].color =  new  Color32(255, 255, 255, 255);
+            Stand[9].color = new Color(255, 255, 255, 255);
+            
             PlayerPrefs.SetInt("haveBall10", haveBall10);
             Ball10Equiper.gameObject.SetActive(true);
         }
@@ -1219,6 +1300,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 750;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall11 = 1;
+            Ball[10].color = new Color32(255, 255, 255, 255);
+            Stand[10].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall11", haveBall11);
             Ball11Equiper.gameObject.SetActive(true);
         }
@@ -1237,6 +1320,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 1500;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall12 = 1;
+            Ball[11].color = new Color32(255, 255, 255, 255);
+            Stand[11].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall12", haveBall12);
             Ball12Equiper.gameObject.SetActive(true);
         }
@@ -1255,6 +1340,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 2000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall13 = 1;
+            Ball[12].color = new Color32(255, 255, 255, 255);
+            Stand[12].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall13", haveBall13);
             Ball13Equiper.gameObject.SetActive(true);
         }
@@ -1273,6 +1360,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 3000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall14 = 1;
+            Ball[13].color = new Color32(255, 255, 255, 255);
+            Stand[13].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall14", haveBall14);
             Ball14Equiper.gameObject.SetActive(true);
         }
@@ -1291,6 +1380,8 @@ public class SkinBuy : MonoBehaviour
             currentCoin -= 3000;
             PlayerPrefs.SetInt("TotalCoins", currentCoin);
             haveBall15 = 1;
+            Ball[14].color = new Color32(255, 255, 255, 255);
+            Stand[14].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall15", haveBall15);
             Ball15Equiper.gameObject.SetActive(true);
         }
@@ -1309,6 +1400,8 @@ public class SkinBuy : MonoBehaviour
             currentGem -= 5;
             PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall16 = 1;
+            Ball[15].color = new Color32(255, 255, 255, 255);
+            Stand[15].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall16", haveBall16);
             Ball16Equiper.gameObject.SetActive(true);
         }
@@ -1327,6 +1420,8 @@ public class SkinBuy : MonoBehaviour
             currentGem -= 5;
             PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall17 = 1;
+            Ball[16].color = new Color32(255, 255, 255, 255);
+            Stand[16].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall17", haveBall17);
             Ball17Equiper.gameObject.SetActive(true);
         }
@@ -1345,6 +1440,8 @@ public class SkinBuy : MonoBehaviour
             currentGem -= 10;
             PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall18 = 1;
+            Ball[17].color = new Color32(255, 255, 255, 255);
+            Stand[17].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall18", haveBall18);
             Ball18Equiper.gameObject.SetActive(true);
         }
@@ -1363,6 +1460,8 @@ public class SkinBuy : MonoBehaviour
             currentGem -= 10;
             PlayerPrefs.SetInt("Diamond", currentGem);
             haveBall19 = 1;
+            Ball[18].color = new Color32(255, 255, 255, 255);
+            Stand[18].color = new Color(255, 255, 255, 255);
             PlayerPrefs.SetInt("haveBall19", haveBall19);
             Ball19Equiper.gameObject.SetActive(true);
         }
