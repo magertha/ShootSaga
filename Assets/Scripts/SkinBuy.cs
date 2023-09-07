@@ -33,7 +33,7 @@ public class SkinBuy : MonoBehaviour
     public int haveBall6, haveBall7, haveBall8, haveBall9, haveBall10, equipBall6, equipBall7, equipBall8, equipBall9, equipBall10;
     public int haveBall11, haveBall12, haveBall13, haveBall14, haveBall15, equipBall11, equipBall12, equipBall13, equipBall14, equipBall15;
     public int haveBall16, haveBall17, haveBall18, haveBall19, equipBall16, equipBall17, equipBall18, equipBall19;
-    public GameObject WarningPanel;
+    public GameObject WarningPanel, WarningPanelGems;
     // Start is called before the first frame update
     void Start()
     {
@@ -1090,6 +1090,12 @@ public class SkinBuy : MonoBehaviour
         WarningPanel.gameObject.SetActive(false);
     }
 
+    IEnumerator waitbeforegems()
+    {
+        yield return new WaitForSeconds(1.35f);
+        WarningPanelGems.gameObject.SetActive(false);
+    }
+
     public void Ball1Buy()
     {
         if (PlayerPrefs.GetInt("TotalCoins") >= 200)
@@ -1407,8 +1413,8 @@ public class SkinBuy : MonoBehaviour
         }
         else
         {
-            WarningPanel.gameObject.SetActive(true);
-            StartCoroutine("waitbefore");
+            WarningPanelGems.gameObject.SetActive(true);
+            StartCoroutine("waitbeforegems");
         }
     }
     public void Ball17Buy()
@@ -1427,8 +1433,8 @@ public class SkinBuy : MonoBehaviour
         }
         else
         {
-            WarningPanel.gameObject.SetActive(true);
-            StartCoroutine("waitbefore");
+            WarningPanelGems.gameObject.SetActive(true);
+            StartCoroutine("waitbeforegems");
         }
     }
     public void Ball18Buy()
@@ -1447,8 +1453,8 @@ public class SkinBuy : MonoBehaviour
         }
         else
         {
-            WarningPanel.gameObject.SetActive(true);
-            StartCoroutine("waitbefore");
+            WarningPanelGems.gameObject.SetActive(true);
+            StartCoroutine("waitbeforegems");
         }
     }
     public void Ball19Buy()
@@ -1467,8 +1473,8 @@ public class SkinBuy : MonoBehaviour
         }
         else
         {
-            WarningPanel.gameObject.SetActive(true);
-            StartCoroutine("waitbefore");
+            WarningPanelGems.gameObject.SetActive(true);
+            StartCoroutine("waitbeforegems");
         }
     }
 
