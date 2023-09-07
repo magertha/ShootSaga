@@ -1246,7 +1246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399401568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -4.852438, z: 5}
+  m_LocalPosition: {x: -0.91, y: -4.8528566, z: 5}
   m_LocalScale: {x: 0.1380091, y: 0.12980542, z: 0.1298054}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3141,7 +3141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650851012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6.312438, z: 100}
+  m_LocalPosition: {x: 0, y: 6.312856, z: 100}
   m_LocalScale: {x: 6.53677, y: 0.4387, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3672,7 +3672,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.092438
+  orthographic size: 6.0928564
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4454,10 +4454,10 @@ RectTransform:
   m_Father: {fileID: 1383888904}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0025024, y: 228.41635}
-  m_SizeDelta: {x: 1170, y: 507.0164}
+  m_AnchorMin: {x: 0, y: 0.48214284}
+  m_AnchorMax: {x: 1, y: 0.76900005}
+  m_AnchoredPosition: {x: 0.0005187988, y: 3.4163513}
+  m_SizeDelta: {x: 0, y: -6.983612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2038828367
 MonoBehaviour:
@@ -4479,7 +4479,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Slide your finger to shoot. Get ready for the challenge!
+  m_text: 'TOUCH ANYWHERE
+
+    ON THE SCREEN,
+
+
+    DRAG, AIM AND SHOOT!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
   m_sharedMaterial: {fileID: -4428925902002512265, guid: cd6ff33b62c35f744a914248b386f6d8, type: 2}
@@ -4506,13 +4511,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 22
   m_fontSizeMax: 72
-  m_fontStyle: 32
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
