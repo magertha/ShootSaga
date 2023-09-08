@@ -11,7 +11,9 @@ public class SpinnerTimer : MonoBehaviour
     public Button ClickButton;
     private ulong lastTimeClicked;
     public GameObject spinner;
-   
+    public Button spinnerButton;
+    public Sprite spriteOn;
+    public Sprite spriteOff;
 
     private void Start()
     {
@@ -26,6 +28,7 @@ public class SpinnerTimer : MonoBehaviour
     {
         if (!ClickButton.IsInteractable())
         {
+            spinnerButton.GetComponent<Image>().sprite = spriteOff;
             if (Ready())
             {
                 ClickButton.interactable = true;
@@ -47,6 +50,10 @@ public class SpinnerTimer : MonoBehaviour
             Time.text = r;
             Debug.Log(r);
 
+        }
+        else
+        {
+            spinnerButton.GetComponent<Image>().sprite = spriteOn; 
         }
     }
 

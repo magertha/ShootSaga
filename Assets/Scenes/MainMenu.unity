@@ -9929,6 +9929,9 @@ MonoBehaviour:
   msToWait: 86400000
   ClickButton: {fileID: 667691077}
   spinner: {fileID: 5595438968086689522}
+  spinnerButton: {fileID: 667691077}
+  spriteOn: {fileID: 21300000, guid: b3c05715a5877394a885065bf8858852, type: 3}
+  spriteOff: {fileID: 21300000, guid: 8d29da71fabcb2b4881f3725bc634e74, type: 3}
 --- !u!114 &982294845
 MonoBehaviour:
   m_ObjectHideFlags: 0
