@@ -3758,8 +3758,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000014305115, y: 168}
-  m_SizeDelta: {x: 200, y: 150}
+  m_AnchoredPosition: {x: 0, y: 221}
+  m_SizeDelta: {x: 146.3, y: 118.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329359844
 MonoBehaviour:
@@ -3850,7 +3850,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -5.9676647, z: 0, w: 0}
+  m_margin: {x: 0, y: 1.0216656, z: 0, w: -0.000000027153826}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4166,7 +4166,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 0.9568628, g: 0.19215688, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4604,7 +4604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.04626546, y: 0}
   m_AnchorMax: {x: 0.94342184, y: 1}
-  m_AnchoredPosition: {x: 4, y: -487.5404}
+  m_AnchoredPosition: {x: 4, y: -487.54037}
   m_SizeDelta: {x: 80, y: 975.0837}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409381410
@@ -6914,7 +6914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0737265, y: 0.8457899}
   m_AnchorMax: {x: 0.45212823, y: 0.89478993}
-  m_AnchoredPosition: {x: 4.4801025, y: -0.27001953}
+  m_AnchoredPosition: {x: 4.480194, y: -0.27001953}
   m_SizeDelta: {x: -14.399994, y: -1.9000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652551229
@@ -8854,10 +8854,10 @@ RectTransform:
   m_Father: {fileID: 1686350679}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000014305115, y: 263}
-  m_SizeDelta: {x: 200, y: 150}
+  m_AnchorMin: {x: 0.18667522, y: 0.5603444}
+  m_AnchorMax: {x: 0.8045982, y: 0.6143697}
+  m_AnchoredPosition: {x: 65.5, y: 247.5}
+  m_SizeDelta: {x: -523, y: 13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871594229
 MonoBehaviour:
@@ -8942,7 +8942,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 52.295055, z: 0, w: 0}
+  m_margin: {x: 0, y: 117.542465, z: 29.657913, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12655,10 +12655,10 @@ RectTransform:
   m_Father: {fileID: 839291992}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.23626088, y: 0.4925545}
+  m_AnchorMax: {x: 0.77027065, y: 0.6804203}
+  m_AnchoredPosition: {x: -4, y: -219}
+  m_SizeDelta: {x: 544, y: 2056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1259947935
 MonoBehaviour:
@@ -14983,10 +14983,10 @@ RectTransform:
   m_Father: {fileID: 839291992}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -0.000061035156, y: -0.00024414062}
+  m_AnchorMin: {x: 0.19600001, y: 0.5374103}
+  m_AnchorMax: {x: 0.80600005, y: 0.6543125}
+  m_AnchoredPosition: {x: -1.5, y: -241}
+  m_SizeDelta: {x: 457, y: 2247.9998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686350680
 MonoBehaviour:
@@ -15817,7 +15817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.529}
   m_AnchorMin: {x: 0.10700001, y: 0.448}
   m_AnchorMax: {x: 0.86313045, y: 0.71169645}
-  m_AnchoredPosition: {x: -26.5, y: -23}
+  m_AnchoredPosition: {x: -26.499939, y: -23}
   m_SizeDelta: {x: -75.97, y: -45.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871416713
@@ -16785,7 +16785,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 0.7960785, b: 0.023529414, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
