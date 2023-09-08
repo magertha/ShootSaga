@@ -11,6 +11,7 @@ public class SpinnerTimer : MonoBehaviour
     public Button ClickButton;
     private ulong lastTimeClicked;
     public GameObject spinner;
+   
 
     private void Start()
     {
@@ -44,7 +45,7 @@ public class SpinnerTimer : MonoBehaviour
             //SECONDS
             r += (secondsLeft % 60).ToString("00") + "s";
             Time.text = r;
-
+            Debug.Log(r);
 
         }
     }
@@ -56,7 +57,7 @@ public class SpinnerTimer : MonoBehaviour
         PlayerPrefs.SetString("LastTimeClicked", lastTimeClicked.ToString());
         ClickButton.interactable = false;
         spinner.SetActive(true);
-
+        
 
     }
     private bool Ready()
@@ -66,6 +67,7 @@ public class SpinnerTimer : MonoBehaviour
 
         float secondsLeft = (float)(msToWait - m) / 1000.0f;
 
+        
         if (secondsLeft < 0)
         {
             //DO SOMETHING WHEN TIMER IS FINISHED
