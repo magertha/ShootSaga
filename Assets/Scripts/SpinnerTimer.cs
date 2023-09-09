@@ -14,7 +14,7 @@ public class SpinnerTimer : MonoBehaviour
     public Button spinnerButton;
     public Sprite spriteOn;
     public Sprite spriteOff;
-
+    public static float secondsLeft;
     private void Start()
     {
 
@@ -37,7 +37,7 @@ public class SpinnerTimer : MonoBehaviour
             }
             ulong diff = ((ulong)DateTime.Now.Ticks - lastTimeClicked);
             ulong m = diff / TimeSpan.TicksPerMillisecond;
-            float secondsLeft = (float)(msToWait - m) / 1000.0f;
+            secondsLeft = (float)(msToWait - m) / 1000.0f;
 
             string r = "";
             //HOURS
