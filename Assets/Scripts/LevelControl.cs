@@ -29,29 +29,14 @@ public class LevelControl : MonoBehaviour
         Time.timeScale=1;
         basketer = false;
         basketerFloat = 0;
-        //Ball1 = GameObject.FindGameObjectWithTag("Ball1");
-        //Ball2 = GameObject.FindGameObjectWithTag("Ball2");
-        //Ball3 = GameObject.FindGameObjectWithTag("Ball3");
-        //Ball4 = GameObject.FindGameObjectWithTag("Ball4");
-        //Ball5 = GameObject.FindGameObjectWithTag("Ball5");
-        //Ball6 = GameObject.FindGameObjectWithTag("Ball6");
-        //Ball7 = GameObject.FindGameObjectWithTag("Ball7");
-        //Ball8 = GameObject.FindGameObjectWithTag("Ball8");
-        //Ball9 = GameObject.FindGameObjectWithTag("Ball9");
-        //Ball10 = GameObject.FindGameObjectWithTag("Ball10");
-        //Ball11 = GameObject.FindGameObjectWithTag("Ball11");
-        //Ball12 = GameObject.FindGameObjectWithTag("Ball12");
-        //Ball13 = GameObject.FindGameObjectWithTag("Ball13");
-        //Ball14 = GameObject.FindGameObjectWithTag("Ball14");
-        //Ball15 = GameObject.FindGameObjectWithTag("Ball15");
-        //Ball16 = GameObject.FindGameObjectWithTag("Ball16");
-        //Ball17 = GameObject.FindGameObjectWithTag("Ball17");
-        //Ball18 = GameObject.FindGameObjectWithTag("Ball18");
-        //Ball19 = GameObject.FindGameObjectWithTag("Ball19");
-        //Default = GameObject.FindGameObjectWithTag("BallDefault");
+
 
         adds = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Adds>();
         animator = gameObject.GetComponent<Animator>();
+
+
+        PlayerPrefs.SetInt("firstland", 1);
+
         if (PlayerPrefs.GetInt("equipBall1") == 1)
         {
             Instantiate(Ball1, new Vector3(x, y, z), Quaternion.identity);
