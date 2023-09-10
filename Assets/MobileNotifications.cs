@@ -41,41 +41,6 @@ public class MobileNotifications : MonoBehaviour
         }
 
         StartCoroutine(CheckAndReschedule());//yeni
-
-
-
-        //remove notif that have already seen
-        AndroidNotificationCenter.CancelAllDisplayedNotifications();
-        //create notif channel
-        var channel2 = new AndroidNotificationChannel()
-        {
-            Id = "channel_id2",
-            Name = "Notification Channel2",
-            Importance = Importance.Default,
-            Description = "Spin notifications",
-        };
-        AndroidNotificationCenter.RegisterNotificationChannel(channel2);
-
-        //create notification that going to be sent
-        var notification2 = new AndroidNotification();
-        notification.Title = "Let's Spin The Wheel";
-        notification.Text = "It's time to spin the wheel. Let's use your chance to win lots of coins and gems!";
-        if (SpinnerTimer.secondsLeft == 0f)
-        {
-            notification.FireTime = System.DateTime.Now;
-        }
-        
-
-        //send the notification 
-        var id2 = AndroidNotificationCenter.SendNotification(notification2, "channel_id2");
-
-        //if the script is run and a message is already scheduled, cancel it and re-schedule another message
-        if (AndroidNotificationCenter.CheckScheduledNotificationStatus(id2) == NotificationStatus.Scheduled)
-        {
-            AndroidNotificationCenter.CancelAllNotifications();
-            AndroidNotificationCenter.SendNotification(notification, "channel_id2");
-        }
-
         
     }
     //yeni
