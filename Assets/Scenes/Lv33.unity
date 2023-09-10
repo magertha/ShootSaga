@@ -762,7 +762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186553957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5999999, y: -2.3, z: 0}
+  m_LocalPosition: {x: 0, y: -2.3, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1273,7 +1273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384939565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: -2.27, z: 0}
+  m_LocalPosition: {x: 1.9, y: -2.27, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1700,7 +1700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515899723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6, y: -3.7, z: 0}
+  m_LocalPosition: {x: 1.9, y: -3.7, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2257,7 +2257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746553004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.87, z: 0}
+  m_LocalPosition: {x: 1.9, y: -0.87, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2498,7 +2498,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806998599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -0.87, z: 0}
+  m_LocalPosition: {x: 0, y: -3.7, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4247,7 +4247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520452160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5999999, y: -3.7, z: 0}
+  m_LocalPosition: {x: -1.9, y: -3.7, z: 0}
   m_LocalScale: {x: 0.5982, y: 0.5982, z: 0.5982}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4600,8 +4600,8 @@ MonoBehaviour:
   Ball18: {fileID: 3325024333122030058, guid: 044bd1e0efcaa8f4a99b655dd177664c, type: 3}
   Ball19: {fileID: 3325024333122030058, guid: 9c01c45fe1a3f25448961df26a9970ee, type: 3}
   Default: {fileID: 3325024333122030058, guid: 9a244c5621e8fb84aa4a25269fe60f00, type: 3}
-  x: 0
-  y: -3.7
+  x: -1.9
+  y: -2
   z: 4
 --- !u!95 &1601844131
 Animator:
